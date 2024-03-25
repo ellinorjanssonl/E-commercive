@@ -8,11 +8,13 @@ import Mens from './Pages/Mens';
 import Cart from './Pages/Cart';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ProductDetail from './Components/ProductDetails';
+import { CartProvider } from './Components/CartContext';
 
 
 
 function App() {
   return (
+    <CartProvider>
     <BrowserRouter>
       <NavbarComponent/>
       <Routes>
@@ -23,6 +25,7 @@ function App() {
         <Route path="/product/:productId" element={<ProductDetail />} />
       </Routes>
     </BrowserRouter>
+    </CartProvider>
   );
 }
 

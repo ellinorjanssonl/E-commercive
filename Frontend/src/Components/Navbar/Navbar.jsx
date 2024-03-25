@@ -1,11 +1,12 @@
-
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { useCart } from '../CartContext'; 
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-// Accept props as an argument here
 function NavbarComponent() {
+  const { cartItems } = useCart();
   return (
     <Navbar expand="lg" className="Navbarsection">
       <Container fluid>
@@ -17,9 +18,9 @@ function NavbarComponent() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link className="navlink" href="/womens">Womens</Nav.Link>
-            <Nav.Link className="navlink" href="/mens">Mens</Nav.Link>
-            <Nav.Link className="navlink" href="/cart">Cart</Nav.Link>
+            <Nav.Link className="navlink" as={Link} to="/womens">Womens</Nav.Link>
+            <Nav.Link className="navlink" as={Link} to="/mens">Mens</Nav.Link>
+            <Nav.Link className="navlink" as={Link} to="/cart">Cart({cartItems.length})</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

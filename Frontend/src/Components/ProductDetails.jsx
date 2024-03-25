@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { useCart } from './CartContext';
 import './ProductDetails.css';
 
 const ProductDetail = () => {
@@ -26,6 +27,8 @@ const ProductDetail = () => {
     return <div>Loading product details...</div>;
   }
 
+  const { addToCart } = useCart();
+
   return (
     <div className='product-detail'>
       <div className='image-container'>
@@ -37,7 +40,7 @@ const ProductDetail = () => {
           <li className='text'>{product.description}</li>
           <li className='price'>Price: ${product.price}</li>
         </ul>
-        <button className='add-to-cart-btn'>Add to Cart</button>
+        <button className='add-to-cart-btn' onClick={() => addToCart(product)}>Add to Cart</button>
       </div>
     </div>
   );
