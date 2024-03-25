@@ -1,0 +1,52 @@
+.product-detail {
+    margin-top: 1rem; /* Lägger till lite utrymme ovanför produktinformationen */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-container img {
+    width: 100%; /* Bilden tar upp halva sidans bredd */
+    height: auto; /* Behåller bildens ursprungliga proportioner */
+  }
+
+  .image-container {
+    display: flex-start;
+    justify-content: center;
+  }
+  
+  .product-info {
+    margin-top: 5rem;
+    width: 50%; /* Informationen tar upp den återstående halvan av bredden */
+    padding-left: 2rem; /* Lägger till lite utrymme mellan bilden och texten */
+  }
+  
+  ul {
+    list-style: none; /* Tar bort listmarkeringar */
+    justify-content: left;
+  }
+  
+  .h2, .text, .price {
+    margin-bottom: 2rem; /* Lägger till lite utrymme mellan listelementen */
+  }
+
+  .h2 {
+    font-size: 4rem; /* Storleken på rubriken */
+    letter-spacing: 0.2rem; /* Avståndet mellan bokstäverna */
+  }
+  
+  .add-to-cart-btn {
+    justify-content: left;
+    width: 90%; /* Gör knappen lika bred som dess förälderkontainer */
+    padding: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px; /* Lägger till utrymme ovanför knappen */
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #0bc026;
+  }
+  
+  

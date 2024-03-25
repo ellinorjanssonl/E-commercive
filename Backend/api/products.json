@@ -1,0 +1,210 @@
+[
+    {
+        "id": 1,
+        "name": "Black Corset",
+        "price": "100",
+        "category": "womens",
+        "imageUrl": "/bilder/top1.webp",
+        "description": "Cropped corset in woven fabric with a sheen. Boning at front and back, hook-and-eye fastening at front, and a concealed zip at back. Lined."
+    },
+
+    {
+        "id": 2,
+        "name": "White Corset",
+        "price": "200",
+        "category": "womens",
+        "imageUrl": "/bilder/top2.webp",
+        "description": "Cropped white corset in woven fabric with a sheen. Boning at front and back, hook-and-eye fastening at front, and a concealed zip at back. Lined."
+    },
+
+    {
+        "id": 3,
+        "name": "Flower shirt",
+        "price": "300",
+        "category": "womens",
+        "imageUrl": "/bilder/top3.webp",
+        "description": "Purple flower shirt in woven fabric with a sheen. Light material, full sleve shirt with small flowers and details everywhere."
+    },
+
+    {
+        "id": 4,
+        "name": "Beige shirt",
+        "price": "400",
+        "category": "womens",
+        "imageUrl": "/bilder/top4.webp",
+        "description": "Beige shirt with long arms and a high neck. The shirt is made of a soft material and has a nice fit. Open back with stripes"
+    },
+
+    {
+        "id": 5,
+        "name": "product5",
+        "price": "500",
+        "category": "womens",
+        "imageUrl": "/bilder/top5.webp",
+        "description": "product5 description"
+    },
+
+    {
+        "id": 6,
+        "name": "product6",
+        "price": "600",
+        "category": "womens",
+        "imageUrl": "/bilder/top6.webp",
+        "description": "product6 description"
+    },
+
+    {
+        "id": 7,
+        "name": "product7",
+        "price": "700",
+        "category": "womens",
+        "imageUrl": "/bilder/top7.webp",
+        "description": "product7 description"
+    },
+
+    {
+        "id": 8,
+        "name": "product8",
+        "price": "800",
+        "category": "womens",
+        "imageUrl": "/bilder/jeans1.webp",
+        "description": "product8 description"
+    },
+
+    {
+        "id": 9,
+        "name": "product9",
+        "price": "900",
+        "category": "womens",
+        "imageUrl": "/bilder/jeans2.webp",
+        "description": "product9 description"
+    },
+
+    {
+        "id": 10,
+        "name": "product10",
+        "price": "1000",
+        "category": "womens",
+        "imageUrl": "/bilder/jeans3.webp",
+        "description": "product10 description"
+    },
+
+    {
+        "id": 11,
+        "name": "product11",
+        "price": "1100",
+        "category": "womens",
+        "imageUrl": "/bilder/jeans4.webp",
+        "description": "product11 description"
+    },
+
+    {
+        "id": 13,
+        "name": "product13",
+        "price": "1300",
+        "category": "womens",
+        "imageUrl": "/bilder/dress1.webp",
+        "description": "product13 description"
+    },
+
+    {
+        "id": 14,
+        "name": "product14",
+        "price": "1400",
+        "category": "womens",
+        "imageUrl": "/bilder/dress2.webp",
+        "description": "product14 description"
+    },
+
+    {
+        "id": 15,
+        "name": "product15",
+        "price": "1500",
+        "category": "womens",
+        "imageUrl": "/bilder/dress3.webp",
+        "description": "product15 description"
+    },
+
+    {
+        "id": 17,
+        "name": "product17",
+        "price": "100",
+        "category": "mens",
+        "imageUrl": "/bilder/mens1.jpg",
+        "description": "product17 description"
+    },
+    {
+        "id": 18,
+        "name": "product18",
+        "price": "200",
+        "category": "mens",
+        "imageUrl": "/bilder/mens2.jpg",
+        "description": "product18 description"
+    },
+    {
+        "id": 19,
+        "name": "product19",
+        "price": "300",
+        "category": "mens",
+        "imageUrl": "/bilder/mens3.webp",
+        "description": "product19 description"
+    },
+    {
+        "id": 20,
+        "name": "product20",
+        "price": "400",
+        "category": "mens",
+        "imageUrl": "/bilder/mens4.jpg",
+        "description": "product20 description"
+    },
+    {
+        "id": 21,
+        "name": "product21",
+        "price": "500",
+        "category": "mens",
+        "imageUrl": "/bilder/mens5.jpg",
+        "description": "product21 description"
+    },
+    {
+        "id": 22,
+        "name": "product22",
+        "price": "600",
+        "category": "mens",
+        "imageUrl": "/bilder/mens6.jpg",
+        "description": "product22 description"
+    },
+    {
+        "id": 23,
+        "name": "product23",
+        "price": "700",
+        "category": "mens",
+        "imageUrl": "/bilder/mens7.jpg",
+        "description": "product23 description"
+    },
+    {
+        "id": 24,
+        "name": "product24",
+        "price": "800",
+        "category": "mens",
+        "imageUrl": "/bilder/mens8.jpg",
+        "description": "product24 description"
+    },
+    {
+        "id": 25,
+        "name": "product25",
+        "price": "900",
+        "category": "mens",
+        "imageUrl": "/bilder/mens9.jpg",
+        "description": "product25 description"
+    },
+    {
+        "id": 26,
+        "name": "product26",
+        "price": "1000",
+        "category": "mens",
+        "imageUrl": "/bilder/mens10.jpg",
+        "description": "product26 description"
+    }
+  
+
+]

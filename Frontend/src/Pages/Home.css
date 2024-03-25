@@ -1,0 +1,75 @@
+.hero {
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+
+
+.intro, h1 {
+    font-size: 8rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    position:absolute;
+    top: 40%;
+    color: transparent;
+    z-index: 10;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.intro, p {
+    font-size: 1rem;
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    position:absolute;
+    top: 70%;
+    color: white;
+    z-index: 10;
+}
+
+  .row {
+    display: flex;
+    flex-wrap: wrap; 
+  }
+
+  .Cards {
+    border:none;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    min-width: 33%; 
+  }
+
+  .Cards img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 1px;
+  }
+
+  .Cards p {
+    width: 90%;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-size: 0.8rem;
+    font-family: 'poppins';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .imagesrow {
+    max-width: 100%; 
+    height: auto; 
+  }
