@@ -29,6 +29,11 @@
   text-decoration: none;
 }
 
+.icon-space {
+  margin-top: 3px;
+  margin-left: 5px; /* Justera värdet efter önskat mellanrum */
+}
+
 @media screen and (max-width: 768px) {
   .Navbarsection {
     width: 100%;

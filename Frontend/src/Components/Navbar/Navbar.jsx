@@ -5,6 +5,10 @@ import { useCart } from '../CartContext';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../AuthContext';
 import { useNavigate } from 'react-router-dom';
+import {faVenus} from '@fortawesome/free-solid-svg-icons';
+import {faMars} from '@fortawesome/free-solid-svg-icons';
+import {faCartShopping} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Navbar.css';
 
 function NavbarComponent() {
@@ -28,11 +32,10 @@ function NavbarComponent() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link className="navlink" as={Link} to="/womens">Womens</Nav.Link>
-            <Nav.Link className="navlink" as={Link} to="/mens">Mens</Nav.Link>
-            <Nav.Link className="navlink" as={Link} to="/cart">Cart({cartItems.length})</Nav.Link>
-          
-            </Nav>
+            <Nav.Link className="navlink" as={Link} to="/womens">Womens <FontAwesomeIcon icon={faVenus} className="icon-space"/></Nav.Link>
+            <Nav.Link className="navlink" as={Link} to="/mens">Mens <FontAwesomeIcon icon={faMars} className="icon-space"/></Nav.Link>
+            <Nav.Link className="navlink" as={Link} to="/cart">Cart ({cartItems.length})<FontAwesomeIcon icon={faCartShopping} className="icon-space"/></Nav.Link>
+          </Nav>
 
         {isLoggedIn ? (
         <Nav.Link className="navlogin" onClick={handleLogout}>Logout</Nav.Link>
