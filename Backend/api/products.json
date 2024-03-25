@@ -37,92 +37,92 @@
 
     {
         "id": 5,
-        "name": "product5",
+        "name": "Nude sweater",
         "price": "500",
         "category": "womens",
         "imageUrl": "/bilder/top5.webp",
-        "description": "product5 description"
+        "description": "Handmade sweater in nude color. The sweater is made of a soft material and has a nice fit. brown buttons in the front."
     },
 
     {
         "id": 6,
-        "name": "product6",
+        "name": "Black/white shirt",
         "price": "600",
         "category": "womens",
         "imageUrl": "/bilder/top6.webp",
-        "description": "product6 description"
+        "description": "Black and white shirt with long arms and a high neck. The shirt is made of a soft material and has a nice fit. ot is shiny and has stripes all over."
     },
 
     {
         "id": 7,
-        "name": "product7",
+        "name": "Black sweater",
         "price": "700",
         "category": "womens",
         "imageUrl": "/bilder/top7.webp",
-        "description": "product7 description"
+        "description": "Handmade sweater in the color black. The sweater is made of a soft material and has a nice fit. it has a open front with details. very warm material."
     },
 
     {
         "id": 8,
-        "name": "product8",
+        "name": "Shirt loose fit",
         "price": "800",
         "category": "womens",
         "imageUrl": "/bilder/jeans1.webp",
-        "description": "product8 description"
+        "description": "A classic shirt in loose fit. Its in a color of beige and black and has a very light and soft materal. Buttons in the front. Oversize"
     },
 
     {
         "id": 9,
-        "name": "product9",
+        "name": "Mom jeans",
         "price": "900",
         "category": "womens",
         "imageUrl": "/bilder/jeans2.webp",
-        "description": "product9 description"
+        "description": "Mom jeans in a dark blue color. The jeans are high waisted and has a straight fit. The jeans are made of a soft material and has a nice fit.Availeble in all sizes."
     },
 
     {
         "id": 10,
-        "name": "product10",
+        "name": "Low waist jeans",
         "price": "1000",
         "category": "womens",
         "imageUrl": "/bilder/jeans3.webp",
-        "description": "product10 description"
+        "description": "Low waist jeans in a light blue color. The jeans are low waisted and has a straight loose fit. The jeans are made of a soft material and has a nice fit. Availeble in all sizes."
     },
 
     {
         "id": 11,
-        "name": "product11",
+        "name": "High waist jeans",
         "price": "1100",
         "category": "womens",
         "imageUrl": "/bilder/jeans4.webp",
-        "description": "product11 description"
+        "description": "High waist jeans in a light greycolor. The jeans are high waisted and has a straight loose fit. Long legs and hard material. The jeans are made by hand and has a perfect fit. Availeble in all sizes."
     },
 
     {
         "id": 13,
-        "name": "product13",
+        "name": "Beige long dress",
         "price": "1300",
         "category": "womens",
         "imageUrl": "/bilder/dress1.webp",
-        "description": "product13 description"
+        "description": "Beige long dress with shoulder stipes and a low neck. The dress is made of silk and has a tight fit. it is shiny and stretchy. Availeble in all sizes"
     },
 
     {
         "id": 14,
-        "name": "product14",
+        "name": "Nude long dress",
         "price": "1400",
         "category": "womens",
         "imageUrl": "/bilder/dress2.webp",
-        "description": "product14 description"
+        "description": "Nude long dress with long arms. The dress is made of cutton and has a loose fit. it is warm and stretchy. Suiteble for fall and winter. Availeble in all sizes"
     },
 
     {
         "id": 15,
-        "name": "product15",
+        "name": "Black/beige long dress",
         "price": "1500",
         "category": "womens",
         "imageUrl": "/bilder/dress3.webp",
-        "description": "product15 description"
+        "description": "Black and beige long dress with long arms. The dress is made of cutton and has a looser fit. it is very stretchy. Suiteble for fall and winter. Availeble in all sizes"
     },
 
     {
