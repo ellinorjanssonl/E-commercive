@@ -5,6 +5,7 @@
   }
   
   .image-container img {
+    margin: 0 1rem; /* Lägger till lite utrymme runt bilden */
     width: 100%; /* Bilden tar upp halva sidans bredd */
     height: auto; /* Behåller bildens ursprungliga proportioner */
   }
@@ -16,9 +17,9 @@
   
   .product-info {
     margin-top: 5rem;
-    padding: 0 3rem; /* Lägger till lite utrymme runt texten */
-    width: 50%; /* Informationen tar upp den återstående halvan av bredden */
-    padding-left: 2rem; /* Lägger till lite utrymme mellan bilden och texten */
+    padding: 0 3rem;
+    width: 45%;
+    padding-left: 2rem; 
   }
   
   ul {
@@ -31,6 +32,7 @@
   }
 
   .h2 {
+    width: 45%;
     font-size: 4rem; /* Storleken på rubriken */
     letter-spacing: 0.2rem; /* Avståndet mellan bokstäverna */
   }
@@ -59,4 +61,36 @@
     text-align: center;
     font-size: 1rem;
   }
+
+  @media screen and (max-width: 768px) {
+    .product-detail {
+      flex-direction: column; /* Ändrar layouten till en kolumn när skärmen är mindre än 768px */
+    }
+  
+    .image-container img {
+      width: 100%; /* Bilden tar upp hela bredden */
+      height: auto; /* Behåller bildens ursprungliga proportioner */
+    }
+  
+    .product-info {
+      margin-top: 1rem; /* Lägger till lite utrymme ovanför texten */
+      width: 100%; /* Informationen tar upp hela bredden */
+      padding-left: 0;
+    }
+
+    .h2 {
+      font-size: 2.5rem; /* Storleken på rubriken */
+    }
+
+    .h2, .text, .price {
+      margin-bottom: 1rem; /* Lägger till lite utrymme mellan listelementen */
+    }
+
+    .add-to-cart-btn {
+      width: 100%; /* Gör knappen lika bred som dess förälderkontainer */
+      margin-bottom: 2rem;
+    }
+
+  }
+  ```
   

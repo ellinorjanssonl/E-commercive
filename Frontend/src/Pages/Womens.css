@@ -28,7 +28,6 @@
     margin: 0 5%; 
   }
   
-  /* Stil för varje produkt */
   .productsUL {
     flex: 1 0 22%; 
     list-style-type: none;
@@ -62,30 +61,36 @@
     color: white;
   }
 
-  .searchbar {
+  .Formsearch {
     display: flex;
-    font-size: 0.9rem;
-    justify-content: space-between;
-    margin: 0 1rem;
-    background-color:#ffffff;
-    border: 1px solid #000000;
-    border-radius: 2px;
+    justify-content: center; /* Centrerar formelementen horisontellt */
+    align-items: center; /* Ser till att elementen i formen är vertikalt utjämnade */
+    margin-bottom: 1rem; /* Ger lite utrymme under sökformen */
+  }
+
+  .Formsearch input {
+    padding: 0.6rem; /* Ger lite utrymme runt texten i sökfältet */
+    border: 1px solid #989898; /* Ger en svart kant runt sökfältet */
+    border-radius: 3px; /* Rundar av hörnen på sökfältet */
   }
   
-  .searchbar::placeholder {
-    letter-spacing: 1px;
-    font-size: 0.7rem;
-    color: #3d3d3d;
+  .searchbars {
+    margin-right: 1rem; /* Ger lite utrymme mellan sökfältet och knappen */
+    width: 50%; 
+  }
+
+  .searchbars::placeholder {
+    color: #8a8a8a;
   }
   
   .buttonsearch {
-    display: flex;
-    background-color: #ffffff;
-    color: #000000;
-    border: 1px solid #000000;
+    background-color: #ffffff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: rgb(120, 120, 120); 
+    padding: 0.5rem 1.2rem; 
+    border: none;
     border-radius: 2px;
-    font-size: 0.8rem;
-    letter-spacing: 0.1rem;
+    cursor: pointer; 
   }
 
   .buttonsearch:hover {
@@ -97,5 +102,19 @@
     font-size: 1rem;
     letter-spacing: 0.1rem;
     color: #000000;
+  }
+
+  @media screen and (max-width: 768px) {
+    .productsUL {
+      flex: 1 0 45%; 
+    }
+
+    .products h3 {
+      font-size: 0.8rem;
+    }
+
+    .header {
+      font-size: 3rem;
+    }
   }
   

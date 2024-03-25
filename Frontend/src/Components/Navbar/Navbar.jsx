@@ -3,10 +3,20 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { useCart } from '../CartContext'; 
 import { Link } from 'react-router-dom';
+import { useAuth } from '../AuthContext';
+import { useNavigate } from 'react-router-dom';
 import './Navbar.css';
 
 function NavbarComponent() {
   const { cartItems } = useCart();
+  const { isLoggedIn, logout } = useAuth();
+  const navigate = useNavigate(); // Skapa en instans av useNavigate
+
+  const handleLogout = () => {
+    logout(); // Logga ut användaren
+    navigate('/'); // Navigera till hemsidan efter utloggning
+  };
+
   return (
     <Navbar expand="lg" className="Navbarsection">
       <Container fluid>
@@ -21,8 +31,17 @@ function NavbarComponent() {
             <Nav.Link className="navlink" as={Link} to="/womens">Womens</Nav.Link>
             <Nav.Link className="navlink" as={Link} to="/mens">Mens</Nav.Link>
             <Nav.Link className="navlink" as={Link} to="/cart">Cart({cartItems.length})</Nav.Link>
-          </Nav>
+          
+            </Nav>
+
+        {isLoggedIn ? (
+        <Nav.Link className="navlogin" onClick={handleLogout}>Logout</Nav.Link>
+      ) : (
+        <Nav.Link className="navlogin" as={Link} to="/login">Login</Nav.Link>
+      )}
+        <Nav.Link className="navlogin" as={Link} to="/register">Register</Nav.Link>
         </Navbar.Collapse>
+        
       </Container>
     </Navbar>
   );

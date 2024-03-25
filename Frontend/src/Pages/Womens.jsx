@@ -30,11 +30,11 @@ const Womens = () => {
   return (
     <div className='womens'>
       <h2 className='header'>Women's Products</h2>
-      <Form className="d-flex" onSubmit={(e) => e.preventDefault()}>
+      <Form className="Formsearch" onSubmit={(e) => e.preventDefault()}>
         <Form.Control
           type="search"
           placeholder="Search for products.."
-          className="searchbar"
+          className="searchbars"
           aria-label="Search"
           onChange={(e) => handleSearchChange(e.target.value)}
         />

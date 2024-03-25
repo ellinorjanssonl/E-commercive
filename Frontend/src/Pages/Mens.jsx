@@ -33,7 +33,7 @@ const Mens = () => {
         <Form.Control
           type="search"
           placeholder="Search for products.."
-          className="searchbar"
+          className="searchbars"
           aria-label="Search"
           onChange={(e) => handleSearchChange(e.target.value)}
         />
