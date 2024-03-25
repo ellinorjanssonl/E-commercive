@@ -8,6 +8,7 @@ const ProductDetail = () => {
   const [product, setProduct] = useState();
   const [showAddedMessage, setShowAddedMessage] = useState(false); 
   const { addToCart } = useCart();
+  
 
  useEffect(() => {
   const fetchProduct = async () => {
@@ -43,7 +44,9 @@ const ProductDetail = () => {
         <ul>
           <li><h2 className='h2'>{product.name}</h2></li>
           <li className='text'>{product.description}</li>
+          <li className='sizes'>Sizes: {product.sizes}</li>
           <li className='price'>Price: ${product.price}</li>
+          
         </ul>
         <button className='add-to-cart-btn' onClick={handleAddToCart}>Add to Cart</button>
       {showAddedMessage && <div className='added-message'>Added to cart!</div>} {/* Nytt meddelande */}

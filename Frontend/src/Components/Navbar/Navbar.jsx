@@ -7,6 +7,7 @@ import { useAuth } from '../AuthContext';
 import { useNavigate } from 'react-router-dom';
 import {faVenus} from '@fortawesome/free-solid-svg-icons';
 import {faMars} from '@fortawesome/free-solid-svg-icons';
+import {faUser} from '@fortawesome/free-solid-svg-icons';
 import {faCartShopping} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Navbar.css';
@@ -40,7 +41,7 @@ function NavbarComponent() {
         {isLoggedIn ? (
         <Nav.Link className="navlogin" onClick={handleLogout}>Logout</Nav.Link>
       ) : (
-        <Nav.Link className="navlogin" as={Link} to="/login">Login</Nav.Link>
+        <Nav.Link className="navlogin" as={Link} to="/login">Login <FontAwesomeIcon icon={faUser} className="icon-space"/></Nav.Link>
       )}
         <Nav.Link className="navlogin" as={Link} to="/register">Register</Nav.Link>
         </Navbar.Collapse>

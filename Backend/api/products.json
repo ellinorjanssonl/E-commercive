@@ -5,7 +5,8 @@
         "price": "100",
         "category": "womens",
         "imageUrl": "/bilder/top1.webp",
-        "description": "Cropped corset in woven fabric with a sheen. Boning at front and back, hook-and-eye fastening at front, and a concealed zip at back. Lined."
+        "description": "Cropped corset in woven fabric with a sheen. Boning at front and back, hook-and-eye fastening at front, and a concealed zip at back. Lined.",
+        "sizes": "XS, S, M, L, XL, XXL"
     },
 
     {
@@ -14,7 +15,8 @@
         "price": "200",
         "category": "womens",
         "imageUrl": "/bilder/top2.webp",
-        "description": "Cropped white corset in woven fabric with a sheen. Boning at front and back, hook-and-eye fastening at front, and a concealed zip at back. Lined."
+        "description": "Cropped white corset in woven fabric with a sheen. Boning at front and back, hook-and-eye fastening at front, and a concealed zip at back. Lined.",
+        "sizes": "XS, S, M, L, XL, XXL"
     },
 
     {
@@ -23,7 +25,8 @@
         "price": "300",
         "category": "womens",
         "imageUrl": "/bilder/top3.webp",
-        "description": "Purple flower shirt in woven fabric with a sheen. Light material, full sleve shirt with small flowers and details everywhere."
+        "description": "Purple flower shirt in woven fabric with a sheen. Light material, full sleve shirt with small flowers and details everywhere.",
+        "sizes": "XS, S, M, L, XL, XXL"
     },
 
     {
@@ -32,7 +35,8 @@
         "price": "400",
         "category": "womens",
         "imageUrl": "/bilder/top4.webp",
-        "description": "Beige shirt with long arms and a high neck. The shirt is made of a soft material and has a nice fit. Open back with stripes"
+        "description": "Beige shirt with long arms and a high neck. The shirt is made of a soft material and has a nice fit. Open back with stripes",
+        "sizes": "XS, S, M, L, XL, XXL"
     },
 
     {
@@ -41,7 +45,8 @@
         "price": "500",
         "category": "womens",
         "imageUrl": "/bilder/top5.webp",
-        "description": "Handmade sweater in nude color. The sweater is made of a soft material and has a nice fit. brown buttons in the front."
+        "description": "Handmade sweater in nude color. The sweater is made of a soft material and has a nice fit. brown buttons in the front.",
+        "sizes": "XS, S, M, L, XL, XXL"
     },
 
     {
@@ -50,7 +55,8 @@
         "price": "600",
         "category": "womens",
         "imageUrl": "/bilder/top6.webp",
-        "description": "Black and white shirt with long arms and a high neck. The shirt is made of a soft material and has a nice fit. ot is shiny and has stripes all over."
+        "description": "Black and white shirt with long arms and a high neck. The shirt is made of a soft material and has a nice fit. ot is shiny and has stripes all over.",
+        "sizes": "XS, S, M, L, XL, XXL"
     },
 
     {
@@ -59,7 +65,8 @@
         "price": "700",
         "category": "womens",
         "imageUrl": "/bilder/top7.webp",
-        "description": "Handmade sweater in the color black. The sweater is made of a soft material and has a nice fit. it has a open front with details. very warm material."
+        "description": "Handmade sweater in the color black. The sweater is made of a soft material and has a nice fit. it has a open front with details. very warm material.",
+        "sizes": "XS, S, M, L, XL, XXL"
     },
 
     {
@@ -68,7 +75,8 @@
         "price": "800",
         "category": "womens",
         "imageUrl": "/bilder/jeans1.webp",
-        "description": "A classic shirt in loose fit. Its in a color of beige and black and has a very light and soft materal. Buttons in the front. Oversize"
+        "description": "A classic shirt in loose fit. Its in a color of beige and black and has a very light and soft materal. Buttons in the front. Oversize",
+        "sizes": "XS, S, M, L, XL, XXL"
     },
 
     {
@@ -77,7 +85,8 @@
         "price": "900",
         "category": "womens",
         "imageUrl": "/bilder/jeans2.webp",
-        "description": "Mom jeans in a dark blue color. The jeans are high waisted and has a straight fit. The jeans are made of a soft material and has a nice fit.Availeble in all sizes."
+        "description": "Mom jeans in a dark blue color. The jeans are high waisted and has a straight fit. The jeans are made of a soft material and has a nice fit.Availeble in all sizes.",
+        "sizes": "XS, S, M, L, XL, XXL"
     },
 
     {
@@ -86,7 +95,8 @@
         "price": "1000",
         "category": "womens",
         "imageUrl": "/bilder/jeans3.webp",
-        "description": "Low waist jeans in a light blue color. The jeans are low waisted and has a straight loose fit. The jeans are made of a soft material and has a nice fit. Availeble in all sizes."
+        "description": "Low waist jeans in a light blue color. The jeans are low waisted and has a straight loose fit. The jeans are made of a soft material and has a nice fit. Availeble in all sizes.",
+        "sizes": "XS, S, M, L, XL, XXL"
     },
 
     {
@@ -95,7 +105,8 @@
         "price": "1100",
         "category": "womens",
         "imageUrl": "/bilder/jeans4.webp",
-        "description": "High waist jeans in a light greycolor. The jeans are high waisted and has a straight loose fit. Long legs and hard material. The jeans are made by hand and has a perfect fit. Availeble in all sizes."
+        "description": "High waist jeans in a light greycolor. The jeans are high waisted and has a straight loose fit. Long legs and hard material. The jeans are made by hand and has a perfect fit. Availeble in all sizes.",
+        "sizes": "XS, S, M, L, XL, XXL"
     },
 
     {
@@ -104,7 +115,8 @@
         "price": "1300",
         "category": "womens",
         "imageUrl": "/bilder/dress1.webp",
-        "description": "Beige long dress with shoulder stipes and a low neck. The dress is made of silk and has a tight fit. it is shiny and stretchy. Availeble in all sizes"
+        "description": "Beige long dress with shoulder stipes and a low neck. The dress is made of silk and has a tight fit. it is shiny and stretchy. Availeble in all sizes",
+        "sizes": "XS, S, M, L, XL, XXL"
     },
 
     {
@@ -113,7 +125,8 @@
         "price": "1400",
         "category": "womens",
         "imageUrl": "/bilder/dress2.webp",
-        "description": "Nude long dress with long arms. The dress is made of cutton and has a loose fit. it is warm and stretchy. Suiteble for fall and winter. Availeble in all sizes"
+        "description": "Nude long dress with long arms. The dress is made of cutton and has a loose fit. it is warm and stretchy. Suiteble for fall and winter. Availeble in all sizes",
+        "sizes": "XS, S, M, L, XL, XXL"
     },
 
     {
@@ -122,7 +135,8 @@
         "price": "1500",
         "category": "womens",
         "imageUrl": "/bilder/dress3.webp",
-        "description": "Black and beige long dress with long arms. The dress is made of cutton and has a looser fit. it is very stretchy. Suiteble for fall and winter. Availeble in all sizes"
+        "description": "Black and beige long dress with long arms. The dress is made of cutton and has a looser fit. it is very stretchy. Suiteble for fall and winter. Availeble in all sizes",
+        "sizes": "XS, S, M, L, XL, XXL"
     },
 
     {
@@ -131,7 +145,8 @@
         "price": "100",
         "category": "mens",
         "imageUrl": "/bilder/mens1.jpg",
-        "description": "product17 description"
+        "description": "product17 description",
+        "sizes": "XS, S, M, L, XL, XXL"
     },
     {
         "id": 18,
@@ -139,7 +154,8 @@
         "price": "200",
         "category": "mens",
         "imageUrl": "/bilder/mens2.jpg",
-        "description": "product18 description"
+        "description": "product18 description",
+        "sizes": "XS, S, M, L, XL, XXL"
     },
     {
         "id": 19,
@@ -147,7 +163,8 @@
         "price": "300",
         "category": "mens",
         "imageUrl": "/bilder/mens3.webp",
-        "description": "product19 description"
+        "description": "product19 description",
+        "sizes": "XS, S, M, L, XL, XXL"
     },
     {
         "id": 20,
@@ -155,7 +172,8 @@
         "price": "400",
         "category": "mens",
         "imageUrl": "/bilder/mens4.jpg",
-        "description": "product20 description"
+        "description": "product20 description",
+        "sizes": "XS, S, M, L, XL, XXL"
     },
     {
         "id": 21,
@@ -163,7 +181,8 @@
         "price": "500",
         "category": "mens",
         "imageUrl": "/bilder/mens5.jpg",
-        "description": "product21 description"
+        "description": "product21 description",
+        "sizes": "XS, S, M, L, XL, XXL"
     },
     {
         "id": 22,
@@ -171,7 +190,8 @@
         "price": "600",
         "category": "mens",
         "imageUrl": "/bilder/mens6.jpg",
-        "description": "product22 description"
+        "description": "product22 description",
+        "sizes": "XS, S, M, L, XL, XXL"
     },
     {
         "id": 23,
@@ -179,7 +199,8 @@
         "price": "700",
         "category": "mens",
         "imageUrl": "/bilder/mens7.jpg",
-        "description": "product23 description"
+        "description": "product23 description",
+        "sizes": "XS, S, M, L, XL, XXL"
     },
     {
         "id": 24,
@@ -187,7 +208,8 @@
         "price": "800",
         "category": "mens",
         "imageUrl": "/bilder/mens8.jpg",
-        "description": "product24 description"
+        "description": "product24 description",
+        "sizes": "XS, S, M, L, XL, XXL"
     },
     {
         "id": 25,
@@ -195,7 +217,8 @@
         "price": "900",
         "category": "mens",
         "imageUrl": "/bilder/mens9.jpg",
-        "description": "product25 description"
+        "description": "product25 description",
+        "sizes": "XS, S, M, L, XL, XXL"
     },
     {
         "id": 26,
@@ -203,7 +226,8 @@
         "price": "1000",
         "category": "mens",
         "imageUrl": "/bilder/mens10.jpg",
-        "description": "product26 description"
+        "description": "product26 description",
+        "sizes": "XS, S, M, L, XL, XXL"
     }
   
 
