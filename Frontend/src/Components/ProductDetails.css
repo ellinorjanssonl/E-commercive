@@ -16,6 +16,7 @@
   
   .product-info {
     margin-top: 5rem;
+    padding: 0 3rem; /* Lägger till lite utrymme runt texten */
     width: 50%; /* Informationen tar upp den återstående halvan av bredden */
     padding-left: 2rem; /* Lägger till lite utrymme mellan bilden och texten */
   }
@@ -37,6 +38,7 @@
   .add-to-cart-btn {
     justify-content: left;
     width: 90%; /* Gör knappen lika bred som dess förälderkontainer */
+    margin: 0 10%;
     padding: 1rem;
     background-color: #007bff;
     color: white;
