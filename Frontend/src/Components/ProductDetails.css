@@ -51,4 +51,12 @@
     background-color: #0bc026;
   }
   
+  .added-message {
+    color: #0bc026;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+  }
   

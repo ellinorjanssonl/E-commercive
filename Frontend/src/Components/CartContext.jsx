@@ -24,9 +24,7 @@ export const CartProvider = ({ children }) => {
 
       return [...prevItems, { ...productToAdd, quantity: 1 }];
     });
-
-    alert(`${productToAdd.name} has been added to the cart.`);
-  };
+    };
 
   const removeFromCart = (productId) => {
     setCartItems(cartItems.filter(item => item.id !== productId));

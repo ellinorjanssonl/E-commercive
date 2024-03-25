@@ -6,6 +6,8 @@ import './ProductDetails.css';
 const ProductDetail = () => {
   const { productId } = useParams();
   const [product, setProduct] = useState();
+  const [showAddedMessage, setShowAddedMessage] = useState(false); 
+  const { addToCart } = useCart();
 
  useEffect(() => {
   const fetchProduct = async () => {
@@ -22,12 +24,15 @@ const ProductDetail = () => {
     fetchProduct();
   }, [productId]);
 
-  // Hantera fall då produkten laddas eller inte finns
+  const handleAddToCart = () => {
+    addToCart(product);
+    setShowAddedMessage(true); 
+    setTimeout(() => setShowAddedMessage(false), 4000);
+  };
+
   if (!product) {
     return <div>Loading product details...</div>;
   }
-
-  const { addToCart } = useCart();
 
   return (
     <div className='product-detail'>
@@ -40,7 +45,8 @@ const ProductDetail = () => {
           <li className='text'>{product.description}</li>
           <li className='price'>Price: ${product.price}</li>
         </ul>
-        <button className='add-to-cart-btn' onClick={() => addToCart(product)}>Add to Cart</button>
+        <button className='add-to-cart-btn' onClick={handleAddToCart}>Add to Cart</button>
+      {showAddedMessage && <div className='added-message'>Added to cart!</div>} {/* Nytt meddelande */}
       </div>
     </div>
   );
