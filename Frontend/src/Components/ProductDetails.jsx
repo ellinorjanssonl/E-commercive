@@ -19,7 +19,6 @@ const ProductDetail = () => {
     try {
       const response = await fetch(`http://localhost:5000/api/products/${productId}`);
       const data = await response.json();
-      console.log(data); // Lägg till denna loggning
       setProduct(data);
       setSelectedSize(data.sizes.split(', ')[0]);
     } catch (error) {
