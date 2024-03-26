@@ -58,7 +58,7 @@ const Mens = () => {
 
   return (
     <div className='womens'>
-      <h2 className='header'>Women's Products</h2>
+      <h2 className='header'>Men's Products</h2>
       <Form className="Formsearch" onSubmit={(e) => e.preventDefault()}>
         <Form.Control
           type="search"
