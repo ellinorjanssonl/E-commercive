@@ -1,25 +1,43 @@
 .Footer {
-    display: flex; /* Gör att elementen i footern hamnar bredvid varandra */
-    justify-content: space-between; /* Gör att elementen hamnar i varsin ände av footern */
-    background-color: #575552; /* Mörk bakgrund */
-    color: #ecf0f1; /* Ljus text */
-    font-family: 'poppins';
-    position: relative;
-    bottom: 0;
-    padding: 2% 10%; /* Tar bort marginalen */
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  background-color: #635d55;
+  color: #ecf0f1;
+  font-family: 'Poppins';
+  position: relative;
+  padding: 1rem 10%;
+  box-shadow: 0 -5px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.Footer p {
+  margin-top: 1rem;
+  font-size: 0.7rem;
+  font-weight: 300; /* Gör texten lättare */
+  letter-spacing: 0.05em; /* Lägger till bredd mellan bokstäver */
+}
+
+.Footer a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Mjuk övergång för färgändring */
+}
+
+.Footer a:hover {
+  color: #9c9a90; /* Gyllene färg på hover */
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .Footer {
+    padding: 1rem 5%;
+    display: flex;
+    flex-direction: column;
   }
 
   .Footer p {
-    padding: 0; /* Tar bort paddingen */
-    font-size: 0.7rem; /* Textstorlek */
+    margin: 0.3rem;
+    font-size: 0.6rem;
   }
-  
-  .Footer a {
-    color: #ffffff; /* Färg på länkar */
-    text-decoration: none; /* Tar bort understrykningen från länkar */
-  }
-  
-  .Footer a:hover {
-    text-decoration: underline; /* Lägger till understrykning när muspekaren är över länken */
-  }
+}
   
