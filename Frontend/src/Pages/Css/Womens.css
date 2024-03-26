@@ -56,6 +56,7 @@
   .products h3 {
     font-size: 0.9rem;
     letter-spacing: 0.3rem;
+    text-transform: uppercase;
     background-color: rgb(127, 115, 104);
     padding: 0.8rem;
     color: white;

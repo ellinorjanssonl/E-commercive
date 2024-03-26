@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Form, Button } from 'react-bootstrap';
-import './Womens.css';
+import './Css/Womens.css';
 
 const Mens = () => {
   const [products, setProducts] = useState([]);
@@ -29,7 +29,7 @@ const Mens = () => {
   return (
     <div className='womens'>
       <h2 className='header'>Mens's Products</h2>
-      <Form className="d-flex" onSubmit={(e) => e.preventDefault()}>
+      <Form className="Formsearch" onSubmit={(e) => e.preventDefault()}>
         <Form.Control
           type="search"
           placeholder="Search for products.."

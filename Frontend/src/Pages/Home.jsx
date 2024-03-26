@@ -1,6 +1,6 @@
 import React from 'react'
 import Bild23 from '../Components/Assets/Bild23.webp'
-import './Home.css'
+import './Css/Home.css'
 import Card from 'react-bootstrap/Card'
 import Bild17 from '../Components/Assets/Bild17.webp'
 
