@@ -10,7 +10,7 @@ Jag använder en Hero section för att visa en stor rubrik och en undertext.
 Jag använder också en Featured section för att visa några utvalda produkter. */
 const Home = () => {
   return (
-    <div>
+    <div className='home'>
       <section className="hero">
         <h1 className='Intro'>FASHONHUB</h1>
         <p className='Intro'>Shop the latest fashion trends</p>

@@ -1,8 +1,14 @@
-.hero {
-    text-transform: uppercase;
-    letter-spacing: 1rem;
+.home {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
 }
 
+.hero {
+    text-transform: uppercase;
+    letter-spacing: 1rem;   
+}
 
 .intro, h1 {
     font-size: 8rem;
@@ -15,6 +21,7 @@
     position:absolute;
     top: 40%;
     color: transparent;
+    text-shadow: 1px 1px 1px rgba(223, 223, 223, 0.3);
     z-index: 10;
     -webkit-background-clip: text;
     background-clip: text;
@@ -26,6 +33,8 @@
 
 .intro, p {
     font-size: 1rem;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     margin-top: 2rem;
     width: 100%;
     display: flex;
@@ -48,7 +57,7 @@
     flex: 1;
     margin: 0;
     padding: 0;
-    min-width: 30%; 
+    min-width: 33%; 
     height: 100vh; /* Sätter kortets höjd till 100vh */
     flex: 1; /* Fördelar utrymmet jämnt mellan korten i flexcontainern */
   }
