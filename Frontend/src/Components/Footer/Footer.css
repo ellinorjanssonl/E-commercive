@@ -1,0 +1,25 @@
+.Footer {
+    display: flex; /* Gör att elementen i footern hamnar bredvid varandra */
+    justify-content: space-between; /* Gör att elementen hamnar i varsin ände av footern */
+    background-color: #575552; /* Mörk bakgrund */
+    color: #ecf0f1; /* Ljus text */
+    font-family: 'poppins';
+    position: relative;
+    bottom: 0;
+    padding: 3% 10%; /* Tar bort marginalen */
+  }
+
+  .Footer p {
+    padding: 0; /* Tar bort paddingen */
+    font-size: 0.7rem; /* Textstorlek */
+  }
+  
+  .Footer a {
+    color: #f39c12; /* Färg på länkar */
+    text-decoration: none; /* Tar bort understrykningen från länkar */
+  }
+  
+  .Footer a:hover {
+    text-decoration: underline; /* Lägger till understrykning när muspekaren är över länken */
+  }
+  

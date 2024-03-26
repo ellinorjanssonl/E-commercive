@@ -12,6 +12,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ProductDetail from './Components/ProductDetails';
 import { CartProvider } from './Components/CartContext';
 import { AuthProvider } from './Components/AuthContext';
+import Footer from './Components/Footer/Footer';
 
 
 
@@ -30,9 +31,11 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/product/:productId" element={<ProductDetail />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
     </CartProvider>
     </AuthProvider>
+    
   );
 }
 

@@ -12,8 +12,8 @@ const Home = () => {
   return (
     <div className='home'>
       <section className="hero">
-        <h1 className='Intro'>FASHONHUB</h1>
-        <p className='Intro'>Shop the latest fashion trends</p>
+        <h1 className='Intro-h1'>FASHONHUB</h1>
+        <p className='Intro-p'>Shop the latest fashion trends</p>
         </section>
        <section className="featured">
         
