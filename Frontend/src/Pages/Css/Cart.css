@@ -12,6 +12,17 @@
     text-align: center; 
   }
 
+  .message {
+    height: 100vh;
+    font-size: 1.5rem; 
+    padding-top: 10rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 33%;
+    color: rgb(0, 0, 0);
+  }
+
   .carth3 {
     font-size: 1.2rem; 
     margin-bottom: 1rem; 
@@ -155,5 +166,10 @@
       max-width: 100%;
       margin-right: 5%;
     }
+
+  .message {
+    margin: 0 10%;
   }
+
+}
   
