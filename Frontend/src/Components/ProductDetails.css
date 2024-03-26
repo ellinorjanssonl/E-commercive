@@ -4,6 +4,7 @@
   justify-content: center; /* Centrerar barnen horisontellt */
   align-items: center; /* Centrerar barnen vertikalt */
   gap: 2rem; /* Lägger till mellanrum mellan barnen */
+  margin-bottom: 2rem;
  }
   
  .image-container img {
