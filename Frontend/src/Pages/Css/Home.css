@@ -57,6 +57,7 @@
     flex: 1;
     margin: 0;
     padding: 0;
+    max-width: 33%;
     min-width: 33%; 
     height: 100vh; /* Sätter kortets höjd till 100vh */
     flex: 1; /* Fördelar utrymmet jämnt mellan korten i flexcontainern */
