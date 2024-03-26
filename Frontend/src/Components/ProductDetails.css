@@ -93,11 +93,16 @@
   @media screen and (max-width: 768px) {
     .product-detail {
       flex-direction: column; 
+      gap: 0;
     }
   
     .image-container img {
-      width: 100%; 
+      max-width: 90%; 
       height: auto; 
+    }
+
+    .image-container {
+      padding-left: 0; 
     }
   
     .product-info {
@@ -115,7 +120,7 @@
     }
 
     .add-to-cart-btn {
-      width: 100%; 
+      width: 90%; 
       margin-bottom: 2rem;
     }
 
