@@ -48,5 +48,45 @@
       }
     ],
     "totalPrice": 5200
+  },
+  {
+    "cartItems": [
+      {
+        "id": 2,
+        "name": "White Corset",
+        "price": "200",
+        "category": "womens",
+        "imageUrl": "/bilder/top2.webp",
+        "description": "Cropped white corset in woven fabric with a sheen. Boning at front and back, hook-and-eye fastening at front, and a concealed zip at back. Lined.",
+        "sizes": "XS, S, M, L, XL, XXL",
+        "quantity": 2
+      },
+      {
+        "id": 23,
+        "name": "product23",
+        "price": "700",
+        "category": "mens",
+        "imageUrl": "/bilder/mens7.jpg",
+        "description": "product23 description",
+        "sizes": "XS, S, M, L, XL, XXL",
+        "quantity": 2
+      }
+    ],
+    "totalPrice": 1800
+  },
+  {
+    "cartItems": [
+      {
+        "id": 2,
+        "name": "White Corset",
+        "price": "200",
+        "category": "womens",
+        "imageUrl": "/bilder/top2.webp",
+        "description": "Cropped white corset in woven fabric with a sheen. Boning at front and back, hook-and-eye fastening at front, and a concealed zip at back. Lined.",
+        "sizes": "XS, S, M, L, XL, XXL",
+        "quantity": 2
+      }
+    ],
+    "totalPrice": 400
   }
 ]

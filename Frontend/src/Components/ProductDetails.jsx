@@ -7,11 +7,12 @@ import './ProductDetails.css';
   Jag använder också useCart för att lägga till produkter i varukorgen. */
 
 const ProductDetail = () => {
-  const { productId } = useParams();
+  const {productId } = useParams();
   const [product, setProduct] = useState();
   const [selectedSize, setSelectedSize] = useState(''); 
   const [showAddedMessage, setShowAddedMessage] = useState(false); 
   const { addToCart } = useCart();
+  
   
  // Hämta produkt från API
  useEffect(() => {

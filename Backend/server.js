@@ -79,6 +79,8 @@ app.get('/api/products/:id', (req, res) => {
     });
 });
 
+
+
 app.post('/api/checkout', (req, res) => {
     const checkoutData = req.body; // Checkout-datan från din frontend
     const checkoutPath = path.join(__dirname, 'api', 'checkout.json'); 

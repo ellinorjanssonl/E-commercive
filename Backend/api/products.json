@@ -228,7 +228,103 @@
         "imageUrl": "/bilder/mens10.jpg",
         "description": "product26 description",
         "sizes": "XS, S, M, L, XL, XXL"
-    }
-  
+    },
 
+    {
+        "id": 27,
+        "name": "Product 1",
+        "description": "Description of product 1",
+        "sale": "20% off",
+        "category": "sale",
+        "imageUrl": "/bilder/bild1.webp",
+        "price": "120",
+        "newprice": "100",
+        "sizes": "Onesize"
+       },
+
+         {
+          "id": 28,
+          "name": "Product 2",
+          "description": "Description of product 2",
+          "sale": "30% off",
+          "category": "sale",
+          "imageUrl": "/bilder/bild2.webp",
+          "price": "150",
+          "newprice": "105",
+          "sizes": "Onesize"
+         },
+    
+         {
+          "id": 29,
+          "name": "Product 3",
+          "description": "Description of product 3",
+          "sale": "40% off",
+          "category": "sale",
+          "imageUrl": "/bilder/bild3.webp",
+          "price": "200",
+          "newprice": "120",
+          "sizes": "Onesize"
+         },
+    
+         {
+          "id": 30,
+          "name": "Product 4",
+          "description": "Description of product 4",
+          "sale": "50% off",
+          "category": "sale",
+          "imageUrl": "/bilder/bild4.webp",
+          "price": "250",
+          "newprice": "125",
+          "sizes": "Onesize"
+         },
+        
+             {
+            "id": 31,
+            "name": "Product 5",
+            "description": "Description of product 5",
+            "sale": "60% off",
+            "category": "sale",
+            "imageUrl": "/bilder/bild5.webp",
+            "price": "300",
+            "newprice": "120",
+            "sizes": "Onesize"
+             },
+        
+             {
+            "id": 32,
+            "name": "Product 6",
+            "description": "Description of product 6",
+            "sale": "70% off",
+            "category": "sale",
+            "imageUrl": "/bilder/bild6.webp",
+            "price": "350",
+            "newprice": "105",
+            "sizes": "Onesize"
+             },
+        
+             {
+            "id": 33,
+            "name": "Product 7",
+            "description": "Description of product 7",
+            "sale": "80% off",
+            "category": "sale",
+            "imageUrl": "/bilder/bild7.webp",
+            "price": "400",
+            "newprice": "80",
+            "sizes": "Onesize"
+             },
+        
+             {
+            "id": 34,
+            "name": "Product 8",
+            "description": "Description of product 8",
+            "sale": "90% off",
+            "category": "sale",
+            "imageUrl": "/bilder/bild8.webp",
+            "price": "4500",
+            "newprice": "450",
+            "sizes": "Onesize"
+             }
+     
 ]
+  

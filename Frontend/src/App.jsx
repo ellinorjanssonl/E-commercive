@@ -8,6 +8,7 @@ import Mens from './Pages/Mens';
 import Cart from './Pages/Cart';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
+import Sale from './Pages/Sale';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ProductDetail from './Components/ProductDetails';
 import { CartProvider } from './Components/CartContext';
@@ -27,6 +28,7 @@ function App() {
         <Route path="/womens" element={<Womens />} />
         <Route path="/mens" element={<Mens />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/sale" element={<Sale />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/product/:productId" element={<ProductDetail />} />

@@ -35,6 +35,7 @@ function NavbarComponent() {
           >
             <Nav.Link className="navlink" as={Link} to="/womens">Womens <FontAwesomeIcon icon={faVenus} className="icon-space"/></Nav.Link>
             <Nav.Link className="navlink" as={Link} to="/mens">Mens <FontAwesomeIcon icon={faMars} className="icon-space"/></Nav.Link>
+            <Nav.Link className="navlink" as={Link} to="/sale">Sale</Nav.Link>
             <Nav.Link className="navlink" as={Link} to="/cart">Cart ({cartItems.length})<FontAwesomeIcon icon={faCartShopping} className="icon-space"/></Nav.Link>
           </Nav>
 

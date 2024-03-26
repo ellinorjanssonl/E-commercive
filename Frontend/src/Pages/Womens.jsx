@@ -9,7 +9,7 @@ const Womens = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [favorites, setFavorites] = useState(() => {
   const localFavorites = localStorage.getItem('favorites');
-   return localFavorites ? JSON.parse(localFavorites) : [];
+  return localFavorites ? JSON.parse(localFavorites) : [];
   });
 
   useEffect(() => {
