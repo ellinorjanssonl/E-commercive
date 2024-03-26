@@ -2,15 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Form, Button } from 'react-bootstrap';
 import './Css/Womens.css';
-
-/* här är min komponent för Mens.jsx. Här visar jag alla produkter som är kategoriserade som mens. 
-Jag använder useState, useEffect och en ny state för att hålla koll på söktermen.
-Jag använder också en Form för att skapa en sökruta där användaren kan söka efter produkter. */
+import { FaHeart, FaRegHeart } from 'react-icons/fa';
 
 const Mens = () => {
   const [products, setProducts] = useState([]);
-  const [searchTerm, setSearchTerm] = useState(''); // Ny state för att hålla koll på söktermen
-  const mensProducts = products.filter(product => product.category === "mens" && (product.name.toLowerCase().includes(searchTerm.toLowerCase()) || product.description.toLowerCase().includes(searchTerm.toLowerCase())));
+  const [searchTerm, setSearchTerm] = useState('');
+  const [favorites, setFavorites] = useState(() => {
+  const localFavorites = localStorage.getItem('favorites');
+   return localFavorites ? JSON.parse(localFavorites) : [];
+  });
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -24,15 +24,41 @@ const Mens = () => {
     };
 
     fetchProducts();
-  }, []); 
+  }, []);
+
+  useEffect(() => {
+    // Uppdatera localStorage när favoriter ändras
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+  }, [favorites]);
+
+  const toggleFavorite = (productId) => {
+    setFavorites((prevFavorites) => {
+      const isAlreadyFavorite = prevFavorites.includes(productId);
+      if (isAlreadyFavorite) {
+        return prevFavorites.filter(favId => favId !== productId);
+      } else {
+        return [...prevFavorites, productId];
+      }
+    });
+  };
+
+  const isProductFavorite = (productId) => {
+    return favorites.includes(productId);
+  };
 
   const handleSearchChange = (value) => {
     setSearchTerm(value);
   };
 
+  const MensProducts = products.filter(product => 
+    product.category === "mens" && 
+    (product.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
+     product.description.toLowerCase().includes(searchTerm.toLowerCase()))
+  );
+
   return (
     <div className='womens'>
-      <h2 className='header'>Mens's Products</h2>
+      <h2 className='header'>Women's Products</h2>
       <Form className="Formsearch" onSubmit={(e) => e.preventDefault()}>
         <Form.Control
           type="search"
@@ -44,7 +70,7 @@ const Mens = () => {
         <Button className="buttonsearch" variant="outline-success">Search</Button>
       </Form>
       <div className='products'>
-      {mensProducts.map(product => (
+        {MensProducts.map(product => (
           <ul className='productsUL' key={product.id}> 
             <li>
               <h3>{product.name}</h3>
@@ -53,8 +79,12 @@ const Mens = () => {
               <Link to={`/product/${product.id}`}>
                 <img src={`http://localhost:5000${product.imageUrl}`} alt={product.name} />
               </Link>
+            </li> 
+            <li className='Price'> Price: ${product.price}
             </li>
-            <li>Price: ${product.price}</li>
+            <li className='heart' onClick={() => toggleFavorite(product.id)}>
+            {isProductFavorite(product.id) ? <FaHeart className='hearticon'/> : <FaRegHeart />}
+            </li>
           </ul>
         ))}
       </div>

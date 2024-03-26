@@ -1,28 +1,28 @@
 .product-detail {
   margin-top: 2rem;
   display: flex;
-  justify-content: center; /* Centrerar barnen horisontellt */
-  align-items: center; /* Centrerar barnen vertikalt */
-  gap: 2rem; /* Lägger till mellanrum mellan barnen */
+  justify-content: center; 
+  align-items: center; 
+  gap: 2rem; 
   margin-bottom: 2rem;
  }
   
  .image-container img {
-   max-width: 80%; /* Säkerställer att bilden inte går över behållarens bredd */
+   max-width: 80%; 
    border: 2px solid #000;
   }
 
   .image-container {
     padding-left: 3rem;
-    flex: 1; /* Tar upp hälften av förälderns utrymme */
+    flex: 1; 
     display: flex;
-    justify-content: center; /* Centrerar bilden horisontellt */
-    align-items: center; /* Centrerar bilden vertikalt */
+    justify-content: center;
+    align-items: center; 
   }
   
   .product-info {
     flex: 1;
-    max-width: 90%; /* Säkerställer att informationen inte går över behållarens bredd */
+    max-width: 90%; 
     margin-bottom: 15rem;
   }
 

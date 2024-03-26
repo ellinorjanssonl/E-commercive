@@ -34,23 +34,22 @@
     padding: 0; 
     border-radius: 5px; 
     overflow: hidden; 
-    transition: transform ease 0.5s; 
+    
   }
 
-  .productsUL:hover {
-    transform: scale(1.05);
-  }
-
-  /* Stil för varje produkt-item */
   .productsUL li {
     text-align: center; 
     margin: 1rem 0; 
   }
   
-  /* Stil för bilder */
   .productsUL img {
     width: 100%; 
     height: auto; 
+    transition: transform ease 0.5s; 
+  }
+
+  .productsUL img:hover {
+    transform: scale(1.03);
   }
 
   .products h3 {
@@ -104,6 +103,21 @@
     letter-spacing: 0.1rem;
     color: #000000;
   }
+
+  .heart {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Ger en mjuk övergångseffekt */
+  }
+  
+  .heart:hover {
+    transform: scale(1.5); /* Ökar storleken på ikonen med 20% */
+  }
+
+  .hearticon {
+    color: rgb(255, 24, 170); /* Röd färg på hjärtikonen */
+  }
+
 
   @media screen and (max-width: 768px) {
     .productsUL {
