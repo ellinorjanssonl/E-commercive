@@ -6,7 +6,7 @@
     font-family: 'poppins';
     position: relative;
     bottom: 0;
-    padding: 3% 10%; /* Tar bort marginalen */
+    padding: 2% 10%; /* Tar bort marginalen */
   }
 
   .Footer p {
