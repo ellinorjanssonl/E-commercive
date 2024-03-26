@@ -9,6 +9,7 @@ import './ProductDetails.css';
 const ProductDetail = () => {
   const { productId } = useParams();
   const [product, setProduct] = useState();
+  const [selectedSize, setSelectedSize] = useState(''); 
   const [showAddedMessage, setShowAddedMessage] = useState(false); 
   const { addToCart } = useCart();
   
@@ -20,6 +21,7 @@ const ProductDetail = () => {
       const data = await response.json();
       console.log(data); // Lägg till denna loggning
       setProduct(data);
+      setSelectedSize(data.sizes.split(', ')[0]);
     } catch (error) {
       console.error('Error fetching product:', error);
     }
@@ -31,6 +33,7 @@ const ProductDetail = () => {
   // Lägg till produkt i varukorgen
   const handleAddToCart = () => {
     addToCart(product);
+    addToCart({ ...product, selectedSize })
     setShowAddedMessage(true); 
     setTimeout(() => setShowAddedMessage(false), 4000);
   };
@@ -48,16 +51,25 @@ const ProductDetail = () => {
         <ul>
           <li><h2 className='h2'>{product.name}</h2></li>
           <li className='text'>{product.description}</li>
-          <li className='sizes'>Sizes: {product.sizes}</li>
-          <li className='price'>Price: ${product.price}</li>
-          
+          <li className='sizes'>
+            <ul className='sizes-list'>
+              {product.sizes.split(', ').map((size) => (
+                <li
+                  key={size}
+                  className={`size-option ${selectedSize === size ? 'selected' : ''}`}
+                  onClick={() => setSelectedSize(size)}
+                >
+                  {size}
+                </li>
+              ))}
+            </ul>
+          </li>
+          <li><button className='add-to-cart-btn' onClick={handleAddToCart}>Add to Cart</button></li>
+          {showAddedMessage && <div className='added-message'>Added to cart!</div>}
         </ul>
-        <button className='add-to-cart-btn' onClick={handleAddToCart}>Add to Cart</button>
-      {showAddedMessage && <div className='added-message'>Added to cart!</div>} {/* Nytt meddelande */}
       </div>
     </div>
   );
-  
 };
 
 export default ProductDetail;

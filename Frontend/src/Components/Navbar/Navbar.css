@@ -4,11 +4,12 @@
   align-items: center;
   padding: 20px;
   background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .navlink {
-  display: flex;
+  position: relative; 
+  display: inline-block;
   justify-content: space-between;
   font-size: 1rem;
   margin: 0 1.5rem;
@@ -16,6 +17,25 @@
   font-weight: 500;
   color: #000000;
   text-decoration: none;
+}
+
+.navlink:hover {
+  color:  rgb(110, 107, 102); 
+}
+
+.navlink::after {
+  content: ''; 
+  position: absolute; 
+  left: 0;
+  right: 100%;
+  bottom: 0; 
+  background: rgb(110, 107, 102); 
+  height: 2px; 
+  transition: right 0.5s ease-in-out; 
+}
+
+.navlink:hover::after {
+  right: 0; 
 }
 
 .navlogin {
