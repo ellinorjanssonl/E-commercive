@@ -18,7 +18,7 @@ app.post('/api/register', (req, res) => {
     const usersPath = path.join(__dirname, 'api', 'users.json');
     const users = JSON.parse(fs.readFileSync(usersPath, 'utf8'));
     
-    // Kontrollera om användaren redan finns
+    // Kontrollera om acdnvändaren redan finns
     const userExists = users.some(user => user.username === username);
     if (userExists) {
       return res.status(400).json({ message: 'Användaren finns redan' });
@@ -52,9 +52,11 @@ app.post('/api/login', (req, res) => {
             res.status(500).send('Kunde inte läsa produkterna');
             return;
         }
-        res.json(JSON.parse(data));
+        const products = JSON.parse(data);
+        res.json(products);
     });
 });
+
 
 app.get('/api/products/:id', (req, res) => {
     console.log(`Request for product with ID: ${req.params.id}`);
@@ -76,6 +78,19 @@ app.get('/api/products/:id', (req, res) => {
         res.json(product);
     });
 });
+
+app.post('/api/checkout', (req, res) => {
+    const checkoutData = req.body; // Checkout-datan från din frontend
+    const checkoutPath = path.join(__dirname, 'api', 'checkout.json'); 
+    const checkout = JSON.parse(fs.readFileSync(checkoutPath, 'utf8')); 
+    checkout.push(checkoutData); 
+    fs.writeFileSync
+    (checkoutPath, JSON.stringify(checkout, null, 2)); // Spara den uppdaterade checkout-datan
+
+    res.json({ message: 'Tack för din beställning!' });
+
+});
+
 
 app.listen(PORT, () => {
     console.log(`Servern körs på port ${PORT}`);
