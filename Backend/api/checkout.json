@@ -13,5 +13,40 @@
       }
     ],
     "totalPrice": 1200
+  },
+  {
+    "cartItems": [
+      {
+        "id": 11,
+        "name": "High waist jeans",
+        "price": "1100",
+        "category": "womens",
+        "imageUrl": "/bilder/jeans4.webp",
+        "description": "High waist jeans in a light greycolor. The jeans are high waisted and has a straight loose fit. Long legs and hard material. The jeans are made by hand and has a perfect fit. Availeble in all sizes.",
+        "sizes": "XS, S, M, L, XL, XXL",
+        "quantity": 2
+      },
+      {
+        "id": 22,
+        "name": "product22",
+        "price": "600",
+        "category": "mens",
+        "imageUrl": "/bilder/mens6.jpg",
+        "description": "product22 description",
+        "sizes": "XS, S, M, L, XL, XXL",
+        "quantity": 2
+      },
+      {
+        "id": 25,
+        "name": "product25",
+        "price": "900",
+        "category": "mens",
+        "imageUrl": "/bilder/mens9.jpg",
+        "description": "product25 description",
+        "sizes": "XS, S, M, L, XL, XXL",
+        "quantity": 2
+      }
+    ],
+    "totalPrice": 5200
   }
 ]
