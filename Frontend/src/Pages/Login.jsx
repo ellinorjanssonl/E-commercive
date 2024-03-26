@@ -3,6 +3,10 @@ import { useAuth } from '../Components/AuthContext';
 import './Css/RegisterLogin.css';
 import { useNavigate } from 'react-router-dom';
 
+/* Här är min inloggningssida där användaren kan logga in.
+Jag använder useState för att hålla koll på användarnamn och lösenord.
+Jag använder också useNavigate för att navigera användaren till hemsidan efter att de har loggat in. */
+
 function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');

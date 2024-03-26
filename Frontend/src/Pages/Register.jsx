@@ -2,11 +2,16 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Css/RegisterLogin.css';
 
+/* här är min register sida där användaren kan registrera sig 
+  Jag använder useState för att hålla koll på användarnamn och lösenord.
+  Jag använder också useNavigate för att navigera användaren till inloggningssidan efter att de har registrerat sig. */
+
 function Register() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate(); // Skapa en instans av useNavigate
 
+  // Funktionen handleSubmit som skickar användarnamn och lösenord till servern
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -21,11 +26,11 @@ function Register() {
 
       if (!response.ok) {
         // Hantera icke-200 svar
-        const text = await response.text(); // Använd .text() istället för .json() för att hantera icke-JSON svar
-        throw new Error(text || 'Något gick fel'); // Kasta ett fel med serverns textmeddelande eller ett generiskt meddelande
+        const text = await response.text(); 
+        throw new Error(text || 'Något gick fel'); 
       }
 
-      // Vid framgångsrik registrering, navigera till inloggningssidan
+      //Vid framgångsrik registrering, navigera till inloggningssidan
       navigate('/login');
     } catch (error) {
       console.error(error.message);

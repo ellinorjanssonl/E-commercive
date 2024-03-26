@@ -3,12 +3,18 @@ import { Link } from 'react-router-dom';
 import { Form, Button } from 'react-bootstrap';
 import './Css/Womens.css';
 
+/* här är min komponent för Womens.jsx. Här visar jag alla produkter som är kategoriserade som womens. Jag använder useState, useEffect och en ny state för att hålla koll på söktermen. 
+  Jag använder också en Form för att skapa en sökruta där användaren kan söka efter produkter. */
+
+
+// Funktionen Womens
 const Womens = () => {
   const [products, setProducts] = useState([]);
   const [searchTerm, setSearchTerm] = useState(''); // Ny state för att hålla koll på söktermen
 
   const womensProducts = products.filter(product => product.category === "womens" && (product.name.toLowerCase().includes(searchTerm.toLowerCase()) || product.description.toLowerCase().includes(searchTerm.toLowerCase())));
-
+ 
+  // Hämta produkter från API
   useEffect(() => {
     const fetchProducts = async () => {
       try {

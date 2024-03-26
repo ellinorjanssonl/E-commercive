@@ -2,21 +2,30 @@
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap; 
-    gap: 1rem; 
+    gap: 2rem;
     justify-content: center; 
   }
 
   .CartItem {
     flex: 1 1 45%; 
     max-width: 45%; 
-    text-align: center;
+    text-align: center; 
+  }
+
+  .carth3 {
+    font-size: 1.2rem; 
+    margin-bottom: 1rem; 
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-transform: uppercase;
   }
   
   .CartItem img {
     width: 100%; 
-    max-width: 80%; 
+    max-width: 75%; 
     height: auto; 
     margin-bottom: 1rem; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   }
   
   .TotalPrice {
@@ -65,17 +74,77 @@
     transform: scale(1.1);
     color: white; 
   }
-
-  .CartTotal button {
+  
+  .carttotal {
+    display:flex;
     margin-bottom: 1rem;
-    padding: 0.5rem 1rem; 
     border: none; 
     border-radius: 2px; 
-    margin-left: 1rem; 
-    border: 1px solid rgb(0, 0, 0);
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
     cursor: pointer; 
+    transition: all 0.3s;
+  }
+
+  .carttotal:hover {
+    background-color: rgb(255, 56, 56);
+    transform: scale(1.1);
+    color: white; 
   }
   
+  .checkout button{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .checkout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    width: 15rem;
+    color: rgb(0, 0, 0);
+    background-color: rgb(84, 92, 255);
+    transition: all 0.3s;
+    
+  }
+
+  .checkout:hover {
+    background-color: rgb(13, 214, 50); 
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  .Loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5rem;
+    color: rgb(0, 0, 0);
+    font-size: 2.5rem;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .spinner {
+    margin-top: 2rem;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    border-left-color: #000; /* Svart färg på spinner */
+    
+    animation: spin 1s linear infinite; /* Animation som snurrar oändligt */
+  }
   

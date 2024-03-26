@@ -4,8 +4,9 @@ import './Css/Home.css'
 import Card from 'react-bootstrap/Card'
 import Bild17 from '../Components/Assets/Bild17.webp'
 
-
-
+/* Här är min komponent för Home.jsx. Här visar jag min startsida för min webbshop.
+Jag använder en Hero section för att visa en stor rubrik och en undertext.
+Jag använder också en Featured section för att visa några utvalda produkter. */
 const Home = () => {
   return (
     <div>

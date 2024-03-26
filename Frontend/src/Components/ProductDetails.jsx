@@ -3,13 +3,16 @@ import { useParams } from 'react-router-dom';
 import { useCart } from './CartContext';
 import './ProductDetails.css';
 
+/* här är min kod för ProductDetails.jsx. Här visar jag detaljerad information om produkten. Jag använder useState, useEffect och useParams.
+  Jag använder också useCart för att lägga till produkter i varukorgen. */
+
 const ProductDetail = () => {
   const { productId } = useParams();
   const [product, setProduct] = useState();
   const [showAddedMessage, setShowAddedMessage] = useState(false); 
   const { addToCart } = useCart();
   
-
+ // Hämta produkt från API
  useEffect(() => {
   const fetchProduct = async () => {
     try {
@@ -25,6 +28,7 @@ const ProductDetail = () => {
     fetchProduct();
   }, [productId]);
 
+  // Lägg till produkt i varukorgen
   const handleAddToCart = () => {
     addToCart(product);
     setShowAddedMessage(true); 

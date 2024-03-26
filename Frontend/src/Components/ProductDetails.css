@@ -1,13 +1,13 @@
 .product-detail {
-    margin-top: 1rem; /* Lägger till lite utrymme ovanför produktinformationen */
+    margin-top: 1rem; 
     display: flex;
     justify-content: center;
   }
   
   .image-container img {
-    margin: 0 1rem; /* Lägger till lite utrymme runt bilden */
-    width: 100%; /* Bilden tar upp halva sidans bredd */
-    height: auto; /* Behåller bildens ursprungliga proportioner */
+    margin: 0 1rem;
+    width: 100%; 
+    height: auto;
   }
 
   .image-container {
@@ -23,30 +23,30 @@
   }
   
   ul {
-    list-style: none; /* Tar bort listmarkeringar */
+    list-style: none; 
     justify-content: left;
   }
   
   .h2, .text, .price {
-    margin-bottom: 2rem; /* Lägger till lite utrymme mellan listelementen */
+    margin-bottom: 2rem; 
   }
 
   .h2 {
     width: 45%;
-    font-size: 4rem; /* Storleken på rubriken */
-    letter-spacing: 0.2rem; /* Avståndet mellan bokstäverna */
+    font-size: 4rem; 
+    letter-spacing: 0.2rem;
   }
   
   .add-to-cart-btn {
     justify-content: left;
-    width: 90%; /* Gör knappen lika bred som dess förälderkontainer */
+    width: 90%; 
     margin: 0 10%;
     padding: 1rem;
     background-color: #007bff;
     color: white;
     border: none;
     cursor: pointer;
-    margin-top: 10px; /* Lägger till utrymme ovanför knappen */
+    margin-top: 10px; 
   }
   
   .add-to-cart-btn:hover {
@@ -64,7 +64,7 @@
 
   @media screen and (max-width: 768px) {
     .product-detail {
-      flex-direction: column; /* Ändrar layouten till en kolumn när skärmen är mindre än 768px */
+      flex-direction: column; 
     }
   
     .image-container img {
@@ -92,5 +92,3 @@
     }
 
   }
-  ```
-  
