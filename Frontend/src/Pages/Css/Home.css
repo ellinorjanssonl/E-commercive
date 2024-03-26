@@ -41,7 +41,6 @@
 
   .row {
     display: flex;
-    flex-wrap: wrap; 
   }
 
   .Cards {
@@ -49,12 +48,14 @@
     flex: 1;
     margin: 0;
     padding: 0;
-    min-width: 33%; 
+    min-width: 30%; 
+    height: 100vh; /* Sätter kortets höjd till 100vh */
+    flex: 1; /* Fördelar utrymmet jämnt mellan korten i flexcontainern */
   }
 
   .Cards img {
     width: 100%; 
-    height: auto; 
+    height: 100vh;
     border-radius: 1px;
   }
 
@@ -80,8 +81,8 @@
     }
 
     .Cards img {
-      width: 100%; 
-      height: auto; 
+      width: auto; 
+      max-height: 90%;
     }
 
     .intro, h1 {

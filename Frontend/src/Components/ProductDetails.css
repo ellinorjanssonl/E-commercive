@@ -91,4 +91,12 @@
       margin-bottom: 2rem;
     }
 
+    .added-message {
+      margin-top: 0.2rem; /* Lägger till lite utrymme ovanför texten */
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-left: 4rem;
+    }
+
   }

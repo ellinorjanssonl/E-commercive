@@ -147,4 +147,25 @@
     
     animation: spin 1s linear infinite; /* Animation som snurrar oändligt */
   }
+
+  @media screen and (max-width: 768px) {
+    .CartItem {
+      flex: 1 1 100%; 
+      max-width: 100%;
+      margin-right: 5%;
+    }
+
+    .carttotal {
+      display:flex;
+      margin-bottom: 1rem;
+      border: none; 
+      border-radius: 2px; 
+      background-color: #000000;
+      color: rgb(255, 255, 255);
+      cursor: pointer; 
+      transition: all 0.3s;
+    }
+
+
+  }
   
