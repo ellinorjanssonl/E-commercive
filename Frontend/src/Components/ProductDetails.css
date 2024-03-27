@@ -116,7 +116,7 @@
       margin-bottom: 2rem;
     }
 
-    .h2 {
+    .product-info h2 {
       font-size: 2.5rem; 
     }
 
@@ -131,9 +131,6 @@
 
     .added-message {
       margin-top: 0.2rem; 
-      justify-content: center;
-      align-items: center;
-      text-align: center;
       margin-left: 2rem;
     }
 

@@ -167,9 +167,22 @@
       margin-right: 5%;
     }
 
-  .message {
+    .message {
     margin: 0 10%;
-  }
+    }
+
+    .TotalPrice {
+      margin: 0 auto;
+    }
+
+    .CartTotal {
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .CartItem button {
+      margin: 0 auto;
+    }
 
 }
   
