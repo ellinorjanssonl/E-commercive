@@ -202,5 +202,9 @@
       margin: 0 auto;
     }
 
+    .CheckoutForm {
+      width: 80vw;
+    }
+
 }
   

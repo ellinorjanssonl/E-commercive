@@ -1,66 +1,38 @@
-import React from 'react'
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { FaHeart, FaRegHeart} from 'react-icons/fa';
+import { useCart } from '../Components/CartContext';
 import './Css/Womens.css';
-import { FaHeart, FaRegHeart } from 'react-icons/fa';
 
+/* Här är min komponent för Sale.jsx. Här visar jag produkterna som är på rea.
+Jag använder useState för att hålla koll på produkterna.
+Jag hämtar produkterna från min backend och visar dem i en lista.
+Jag använder också useCart för att visa produkterna och för att lägga till produkter i favoriter. */
 
 const Sale = () => {
-const [products, setProducts] = useState([]);
-const [searchTerm, setSearchTerm] = useState('');
-const [favorites, setFavorites] = useState(() => {
-const localFavorites = localStorage.getItem('favorites');
-return localFavorites ? JSON.parse(localFavorites) : [];
-  }
-   );
+  const [products, setProducts] = useState([]);
+  const { favorites, toggleFavorite } = useCart(); // Använd favorites och toggleFavorite från context
 
     useEffect(() => {
       const fetchProducts = async () => {
-      try {
-      const response = await fetch('http://localhost:5000/api/products');
-      const data = await response.json();
-    setProducts(data);
-      }
-       catch (error) {
-       console.error('Error fetching products:', error);
-       }
-      }
-    fetchProducts();
-          }
-        , []);
+        try {
+        const response = await fetch('http://localhost:5000/api/products');
+        const data = await response.json();
+        setProducts(data);
+      } catch (error) {
+        console.error('Error fetching products:', error);
+      }};
 
-       useEffect(() => {
-          // Uppdatera localStorage när favoriter ändras
-          localStorage.setItem('favorites', JSON.stringify(favorites));
-          }
-          , [favorites]);
+      fetchProducts();
+      }, []);
 
-          const toggleFavorite = (productId) => {
-          setFavorites((prevFavorites) => {
-          const isAlreadyFavorite = prevFavorites.includes(productId);
-           if (isAlreadyFavorite) {
-            return prevFavorites.filter(favId => favId !== productId);
-           }
-             else {
-               return [...prevFavorites, productId];
-             }
-           }
-          );
-         }
-
-            const isProductFavorite = (productId) => {
-            return favorites.includes(productId);
-            }
-    
-            const handleSearchChange = (value) => {
-            setSearchTerm(value);
-            }
-    
-            const saleProducts = products.filter(product => 
-            product.category === "sale" && 
-            (product.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
-            product.description.toLowerCase().includes(searchTerm.toLowerCase()))
-            );
+        const isProductFavorite = (productId) => {
+        return favorites.some(fav => fav.id === productId);
+         };
+  
+        const saleProducts = products.filter(product => 
+        product.category === "sale"  
+        );
 
 
       return (
@@ -68,29 +40,29 @@ return localFavorites ? JSON.parse(localFavorites) : [];
              <h2 className='header'>SALE</h2>
              <h3 className='header2'>Asseccories & Bags</h3>
              <div className='products'>
-            {saleProducts.map(product => (
-                      <ul className='productsUL' key={product.id}> 
-                        <li>
-                          <h3>{product.name}</h3>
-                        </li>
-                        <li>
-                          <Link to={`/product/${product.id}`}>
-                            <img src={`http://localhost:5000${product.imageUrl}`} alt={product.name} />
-                          </Link>
-                        </li> 
-                        <li className='Price'>Price: ${product.price}
-                        </li>
-                        <li className='Price'>Sale: ${product.sale}
-                        </li>
-                        <li className='heart' onClick={() => toggleFavorite(product.id)}>
-                        {isProductFavorite(product.id) ? <FaHeart className='hearticon'/> : <FaRegHeart />}
-                        </li>
-                      </ul>
-                    ))}
-                  </div>
-                </div>
-              );
-            };
+             {saleProducts.map(product => (
+                <ul className='productsUL' key={product.id}> 
+                    <li>
+                    <h3>{product.name}</h3>
+                    </li>
+                     <li>
+                     <Link to={`/product/${product.id}`}>
+                     <img src={`http://localhost:5000${product.imageUrl}`} alt={product.name} />
+                     </Link>
+                     </li> 
+                     <li className='Price'>Price: ${product.price}
+                     </li>
+                     <li className='Price'>Sale: ${product.sale}
+                     </li>
+                     <li className='heart' onClick={() => toggleFavorite(product)}>
+                     {isProductFavorite(product.id) ? <FaHeart className='hearticon'/> : <FaRegHeart />}
+                     </li>
+                 </ul>
+               ))}
+           </div>
+         </div>
+       );
+     };
 
 
 export default Sale
