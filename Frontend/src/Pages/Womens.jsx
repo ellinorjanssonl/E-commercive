@@ -1,17 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Form, Button } from 'react-bootstrap';
+import { Form} from 'react-bootstrap';
+import { FaHeart, FaRegHeart, FaSearch } from 'react-icons/fa';
+import { useCart } from '../Components/CartContext';
 import './Css/Womens.css';
-import { FaHeart, FaRegHeart } from 'react-icons/fa';
-import { FaSearch } from 'react-icons/fa';
 
 const Womens = () => {
   const [products, setProducts] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
-  const [favorites, setFavorites] = useState(() => {
-  const localFavorites = localStorage.getItem('favorites');
-  return localFavorites ? JSON.parse(localFavorites) : [];
-  });
+  const { favorites, toggleFavorite } = useCart(); // Använd favorites och toggleFavorite från context
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -27,24 +24,8 @@ const Womens = () => {
     fetchProducts();
   }, []);
 
-  useEffect(() => {
-    // Uppdatera localStorage när favoriter ändras
-    localStorage.setItem('favorites', JSON.stringify(favorites));
-  }, [favorites]);
-
-  const toggleFavorite = (productId) => {
-    setFavorites((prevFavorites) => {
-      const isAlreadyFavorite = prevFavorites.includes(productId);
-      if (isAlreadyFavorite) {
-        return prevFavorites.filter(favId => favId !== productId);
-      } else {
-        return [...prevFavorites, productId];
-      }
-    });
-  };
-
   const isProductFavorite = (productId) => {
-    return favorites.includes(productId);
+    return favorites.some(fav => fav.id === productId);
   };
 
   const handleSearchChange = (value) => {
@@ -66,9 +47,9 @@ const Womens = () => {
           placeholder="Search for products.."
           className="searchbars"
           aria-label="Search"
-          onChange={(e) => handleSearchChange(e.target.value)}
+          onChange={handleSearchChange}
         />
-         <FaSearch className="searchIcon"/> 
+        <FaSearch className="searchIcon"/>
       </Form>
       <div className='products'>
         {womensProducts.map(product => (
@@ -81,10 +62,9 @@ const Womens = () => {
                 <img src={`http://localhost:5000${product.imageUrl}`} alt={product.name} />
               </Link>
             </li> 
-            <li className='Price'> Price: ${product.price}
-            </li>
-            <li className='heart' onClick={() => toggleFavorite(product.id)}>
-            {isProductFavorite(product.id) ? <FaHeart className='hearticon'/> : <FaRegHeart />}
+            <li className='Price'>Price: ${product.price}</li>
+            <li className='heart' onClick={() => toggleFavorite(product)}>
+              {isProductFavorite(product.id) ? <FaHeart className='hearticon'/> : <FaRegHeart />}
             </li>
           </ul>
         ))}
@@ -94,3 +74,4 @@ const Womens = () => {
 };
 
 export default Womens;
+

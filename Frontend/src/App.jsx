@@ -9,6 +9,7 @@ import Cart from './Pages/Cart';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
 import Sale from './Pages/Sale';
+import Favories from './Pages/Favories';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ProductDetail from './Components/ProductDetails';
 import { CartProvider } from './Components/CartContext';
@@ -31,6 +32,7 @@ function App() {
         <Route path="/sale" element={<Sale />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/favorites" element={<Favories />} />
         <Route path="/product/:productId" element={<ProductDetail />} />
       </Routes>
       <Footer/>

@@ -10,6 +10,7 @@ import {faMars} from '@fortawesome/free-solid-svg-icons';
 import {faUser} from '@fortawesome/free-solid-svg-icons';
 import {faCartShopping} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {FaRegHeart} from 'react-icons/fa';
 import './Navbar.css';
 
 function NavbarComponent() {
@@ -45,6 +46,7 @@ function NavbarComponent() {
         <Nav.Link className="navlogin" as={Link} to="/login">Login <FontAwesomeIcon icon={faUser} className="icon-space"/></Nav.Link>
       )}
         <Nav.Link className="navlogin" as={Link} to="/register">Register</Nav.Link>
+        <Nav.Link className="navlogin" as={Link} to="/favorites"><FaRegHeart /></Nav.Link>
         </Navbar.Collapse>
         
       </Container>
