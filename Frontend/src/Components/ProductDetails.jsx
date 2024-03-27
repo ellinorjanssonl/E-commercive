@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useCart } from './CartContext';
-import './ProductDetails.css';
+import '../Pages/Css/ProductDetails.css';
 
 /* här är min kod för ProductDetails.jsx. Här visar jag detaljerad information om produkten. Jag använder useState, useEffect och useParams.
   Jag använder också useCart för att lägga till produkter i varukorgen. */

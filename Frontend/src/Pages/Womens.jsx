@@ -5,6 +5,11 @@ import { FaHeart, FaRegHeart, FaSearch } from 'react-icons/fa';
 import { useCart } from '../Components/CartContext';
 import './Css/Womens.css';
 
+/* Här är min komponent för womens.jsx. Här visar jag produkterna för män.
+Jag använder useState för att hålla koll på söktermen.
+jag hämtar produkterna från min backend och visar dem i en lista.
+Jag använder också useCart för att visa produkterna och för att lägga till produkter i favoriter. */
+
 const Womens = () => {
   const [products, setProducts] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');

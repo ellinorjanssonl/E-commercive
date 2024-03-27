@@ -2,6 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useCart } from '../Components/CartContext';
 
+/* Favorites-komponenten visar användarens favoriter.
+Jag använder useCart för att hämta favorites direkt från context.
+Om det inte finns några favoriter visas ett meddelande. */
+
+
+
 const Favorites = () => {
   const { favorites } = useCart(); // Använd useCart för att hämta favorites direkt
 

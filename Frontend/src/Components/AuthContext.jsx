@@ -1,7 +1,10 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 
-const AuthContext = createContext();
+/* Här skapar jag en context för autentisering. Jag använder createContext för att skapa en context.
+Jag använder useState för att hålla koll på inloggningstillståndet.
+Jag använder useEffect för att spara inloggningstillståndet i localStorage. */
 
+const AuthContext = createContext();
 export function useAuth() {
 return useContext(AuthContext);
 }

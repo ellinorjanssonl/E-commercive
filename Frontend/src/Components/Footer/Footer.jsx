@@ -1,12 +1,15 @@
 import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEarthAmericas, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'; // Importera ikonerna i en enda rad
+import { faEarthAmericas, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'; 
+
+/* Här är min Footer-komponent. Här visar jag information om företaget.
+Jag använder FontAwesomeIcons för att visa ikoner. */
 
 const Footer = () => {
     const year = new Date().getFullYear();
     const name = 'FASHONHUB';
     const author = 'Ellinor Jansson Lande';
-    const email = " Ellinor_jansson@hotmail.com"; // Definiera e-post som en variabel för att undvika upprepning
+    const email = " Ellinor_jansson@hotmail.com"; 
 
     return (
         <footer className='Footer'>

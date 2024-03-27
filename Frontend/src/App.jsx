@@ -16,7 +16,9 @@ import { CartProvider } from './Components/CartContext';
 import { AuthProvider } from './Components/AuthContext';
 import Footer from './Components/Footer/Footer';
 
-
+/* Här är min App-komponent. Här har jag mina routes för att navigera mellan sidorna.
+Jag använder BrowserRouter för att använda routes och jag använder NavbarComponent för att visa navigeringsfältet.
+Jag använder också AuthProvider och CartProvider för att använda context. */
 
 function App() {
   return (
@@ -38,8 +40,7 @@ function App() {
       <Footer/>
     </BrowserRouter>
     </CartProvider>
-    </AuthProvider>
-    
+    </AuthProvider> 
   );
 }
 

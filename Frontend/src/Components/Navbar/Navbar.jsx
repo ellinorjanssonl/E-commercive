@@ -13,11 +13,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {FaRegHeart} from 'react-icons/fa';
 import './Navbar.css';
 
+/* Navbar-komponenten visar en navigeringsfält för användaren.
+Jag använder useCart för att hämta cartItems och favorites.
+Jag använder useAuth för att kolla om användaren är inloggad.
+Jag använder useNavigate för att navigera användaren till en annan sida. */
+
 function NavbarComponent() {
   const { cartItems } = useCart();
   const {favorites} = useCart();
   const { isLoggedIn, logout } = useAuth();
-  const navigate = useNavigate(); // Skapa en instans av useNavigate
+  const navigate = useNavigate(); 
 
   const handleLogout = () => {
     logout(); // Logga ut användaren

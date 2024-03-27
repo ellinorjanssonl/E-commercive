@@ -1,6 +1,11 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { useAuth } from './AuthContext';
 
+/* Här skapar jag en context för varukorgen. Jag använder createContext för att skapa en context.
+Jag använder useState för att hålla koll på varukorgen och favoriter.
+Jag använder useEffect för att spara varukorgen och favoriter i localStorage.
+Jag använder också useAuth för att kolla om användaren är inloggad. */
+
 const CartContext = createContext();
 export const useCart = () => useContext(CartContext);
 
