@@ -1,8 +1,43 @@
+@keyframes scrollBanner {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.banner {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgb(198, 193, 188);
+  padding: 0.5rem;
+  position:absolute;
+  top: 1;
+  width: 100%;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.banner-text {
+  display: inline-block;
+  animation: scrollBanner 15s linear infinite;
+}
+
+@keyframes scrollBanner {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .home {
     display: flex;
     width: 100%;
-    height: auto;
-    margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
 

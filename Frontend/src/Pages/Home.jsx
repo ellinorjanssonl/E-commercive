@@ -11,28 +11,30 @@ Jag använder också en Featured section för att visa några utvalda produkter.
 const Home = () => {
   return (
     <div className='home'>
-      <section className="hero">
-        <h1 className='Intro-h1'>FASHONHUB</h1>
-        <p className='Intro-p'>Shop the latest fashion trends</p>
-        </section>
-       <section className="featured">
-        
-        <div className="row">
-        <Card className="Cards">
-        <Card.Img className ="imagesrow" src={Bild17} alt="Card image" />
-        </Card>
-        <Card className="Cards">
-         <Card.Img className ="imagesrow" src={Bild23} alt="Card image" />
-        </Card>
-        <Card className="Cards">
-         <Card.Img className ="imagesrow" src={Bild8} alt="Card image" />
-        </Card>
+       <div className="banner">
+       <div className="banner-text">
+        Sale now on! Check out our new arrivals and vast selection of clothing for men and women. &nbsp; Sale now on! Check out our new arrivals and vast selection of clothing for men and women.
+        </div>
        </div>
-     </section>
-
-
+        <section className="hero">
+          <h1 className='Intro-h1'>FASHONHUB</h1>
+          <p className='Intro-p'>Shop the latest fashion trends</p>
+          </section>
+          <section className="featured">
+          <div className="row">
+          <Card className="Cards">
+          <Card.Img className="imagesrow" src={Bild17} alt="Card image" />
+          </Card>
+          <Card className="Cards">
+          <Card.Img className="imagesrow" src={Bild23} alt="Card image" />
+          </Card>
+          <Card className="Cards">
+          <Card.Img className="imagesrow" src={Bild8} alt="Card image" />
+          </Card>
+        </div>
+      </section>
     </div>
   )
 }
 
-export default Home
+export default Home;
