@@ -14,8 +14,8 @@ const Footer = () => {
             <p className='Footerp'><FontAwesomeIcon icon={faEarthAmericas} size="lg"/> Stockholm, Sweden</p>
             <p className='Footerp'><FontAwesomeIcon icon={faPhone} size="lg"/> Phone: 08-123 456 78</p>
             <p className='Footerp'>
-                <FontAwesomeIcon icon={faEnvelope} size="lg"/> Email:   
-                <a href={`mailto:${email}`} className="FooterEmail">{email}</a>
+            <FontAwesomeIcon icon={faEnvelope} size="lg"/> Email:   
+            <a href={`mailto:${email}`} className="FooterEmail">{email}</a>
             </p>
         </footer>
     );

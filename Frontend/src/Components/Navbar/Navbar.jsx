@@ -40,16 +40,14 @@ function NavbarComponent() {
             <Nav.Link className="navlink" as={Link} to="/sale">Accessories & Bags</Nav.Link>
             <Nav.Link className="navlink" as={Link} to="/cart">Cart ({cartItems.length})<FontAwesomeIcon icon={faCartShopping} className="icon-space"/></Nav.Link>
           </Nav>
-
-        {isLoggedIn ? (
-        <Nav.Link className="navlogin" onClick={handleLogout}>Logout</Nav.Link>
-      ) : (
-        <Nav.Link className="navlogin" as={Link} to="/login">Login <FontAwesomeIcon icon={faUser} className="icon-space"/></Nav.Link>
-      )}
-        <Nav.Link className="navlogin" as={Link} to="/register">Register</Nav.Link>
-        <Nav.Link className="navlogin" as={Link} to="/favorites"><FaRegHeart color='red' className="icon-space" />({favorites.length})</Nav.Link>
-        </Navbar.Collapse>
-        
+           {isLoggedIn ? (
+             <Nav.Link className="navlogin" onClick={handleLogout}>Logout</Nav.Link>
+              ) : (
+             <Nav.Link className="navlogin" as={Link} to="/login">Login <FontAwesomeIcon icon={faUser} className="icon-space"/></Nav.Link>
+             )}
+             <Nav.Link className="navlogin" as={Link} to="/register">Register</Nav.Link>
+             <Nav.Link className="navlogin" as={Link} to="/favorites"><FaRegHeart color='red' className="icon-space" />({favorites.length})</Nav.Link>
+            </Navbar.Collapse> 
       </Container>
     </Navbar>
   );

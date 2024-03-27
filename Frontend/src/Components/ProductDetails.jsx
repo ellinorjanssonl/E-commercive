@@ -44,25 +44,25 @@ const ProductDetail = () => {
   return (
     <div className='product-detail'>
       <div className='image-container'>
-        <img src={`http://localhost:5000${product.imageUrl}`} alt={product.name} />
+       <img src={`http://localhost:5000${product.imageUrl}`} alt={product.name} />
       </div>
-      <div className='product-info'>
-        <ul>
+        <div className='product-info'>
+         <ul>
           <li><h2 className='h2'>{product.name}</h2></li>
           <li className='text'>{product.description}</li>
           <li className='sizes'>
-            <ul className='sizes-list'>
-              {product.sizes.split(', ').map((size) => (
-                <li
-                  key={size}
-                  className={`size-option ${selectedSize === size ? 'selected' : ''}`}
-                  onClick={() => setSelectedSize(size)}
-                >
-                 {size}
-                 </li>
-                 ))}
-                </ul>
-                   <li className='size-guide'>
+         <ul className='sizes-list'>
+            {product.sizes.split(', ').map((size) => (
+            <li
+              key={size}
+              className={`size-option ${selectedSize === size ? 'selected' : ''}`}
+              onClick={() => setSelectedSize(size)}
+            >
+             {size}
+             </li>
+           ))}
+              </ul>
+                 <li className='size-guide'>
                     <strong>Size Guide:</strong><br />
                     S - For chest 32-33 inches, waist 26-27 inches.<br />
                     M - For chest 34-35 inches, waist 28-29 inches.<br />
@@ -72,7 +72,7 @@ const ProductDetail = () => {
                     <br />
                     <li className='price'> Price : {product.price}$</li>
                   </li>
-                  <li><button className='add-to-cart-btn' onClick={handleAddToCart}>Add to Cart</button></li>
+                    <li><button className='add-to-cart-btn' onClick={handleAddToCart}>Add to Cart</button></li>
                  {showAddedMessage && <div className='added-message'>Added to cart!</div>}
                </ul>
            </div>
