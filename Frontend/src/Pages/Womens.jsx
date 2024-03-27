@@ -27,9 +27,8 @@ const Womens = () => {
   const isProductFavorite = (productId) => {
     return favorites.some(fav => fav.id === productId);
   };
-
-  const handleSearchChange = (value) => {
-    setSearchTerm(value);
+  const handleSearchChange = (e) => {
+    setSearchTerm(e.target.value);  // Uppdatera till att använda event-objektet och extrahera värdet
   };
 
   const womensProducts = products.filter(product => 
@@ -42,13 +41,13 @@ const Womens = () => {
     <div className='womens'>
       <h2 className='header'>Women's Products</h2>
       <Form className="Formsearch" onSubmit={(e) => e.preventDefault()}>
-        <Form.Control
-          type="search"
-          placeholder="Search for products.."
-          className="searchbars"
-          aria-label="Search"
-          onChange={handleSearchChange}
-        />
+      <Form.Control
+       type="search"
+       placeholder="Search for products.."
+       className="searchbars"
+       aria-label="Search"
+       onChange={handleSearchChange}  // Använd den uppdaterade hanteraren
+       />
         <FaSearch className="searchIcon"/>
       </Form>
       <div className='products'>

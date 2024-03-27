@@ -30,8 +30,8 @@ const Mens = () => {
     return favorites.some(fav => fav.id === productId);
   };
 
-  const handleSearchChange = (value) => {
-    setSearchTerm(value);
+  const handleSearchChange = (e) => {
+    setSearchTerm(e.target.value);  // Uppdatera till att använda event-objektet och extrahera värdet
   };
 
   const MensProducts = products.filter(product => 
@@ -45,11 +45,11 @@ const Mens = () => {
       <h2 className='header'>Men's Products</h2>
       <Form className="Formsearch" onSubmit={(e) => e.preventDefault()}>
         <Form.Control
-          type="search"
-          placeholder="Search for products.."
-          className="searchbars"
-          aria-label="Search"
-          onChange={(e) => handleSearchChange(e.target.value)}
+        type="search"
+        placeholder="Search for products.."
+        className="searchbars"
+        aria-label="Search"
+        onChange={handleSearchChange}  // Använd den uppdaterade hanteraren
         />
           <FaSearch className="searchIcon"/> 
       </Form>
