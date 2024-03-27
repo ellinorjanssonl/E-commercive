@@ -5,11 +5,15 @@ import { useCart } from '../Components/CartContext';
 const Favorites = () => {
   const { favorites } = useCart(); // Använd useCart för att hämta favorites direkt
 
+  if (favorites.length === 0) {
+    return <p className='message'>No favorites added yet</p>;
+  }
+
   return (
     <div className='favorites'>
       <h2>Favorites</h2>
       <div className='products'>
-        {favorites.map(product => ( // Iterera över favorites från context
+        {favorites.map(product => ( 
           <ul className='productsUL' key={product.id}>
             <li>
               <h3>{product.name}</h3>
