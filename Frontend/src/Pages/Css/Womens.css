@@ -62,49 +62,33 @@
   }
   
   .Formsearch {
+    width: 25vw;
     display: flex;
-    justify-content: center; /* Centrerar formelementen horisontellt */
-    align-items: center; /* Ser till att elementen i formen är vertikalt utjämnade */
-    margin-bottom: 1rem; /* Ger lite utrymme under sökformen */
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 1rem; 
   }
 
   .Formsearch input {
-    padding: 0.6rem; /* Ger lite utrymme runt texten i sökfältet */
-    border: 1px solid #989898; /* Ger en svart kant runt sökfältet */
-    border-radius: 3px; /* Rundar av hörnen på sökfältet */
-  }
-  
-  .searchbars {
-    margin-right: 1rem; /* Ger lite utrymme mellan sökfältet och knappen */
-    width: 50%; 
+    width: 100%; 
+    padding: 0.5rem;
+    border: 1px solid #989898; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
   }
 
   .searchbars::placeholder {
     color: #8a8a8a;
+    font-size: 0.9rem;
   }
 
   .searchIcon {
     color: #8a8a8a;
     font-size: 1.2rem;
     position: relative;
-    left: -3rem;
+    left: -2rem;
   }
   
-  .buttonsearch {
-    background-color: #ffffff; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    color: rgb(120, 120, 120); 
-    padding: 0.5rem 1.2rem; 
-    border: none;
-    border-radius: 2px;
-    cursor: pointer; 
-  }
-
-  .buttonsearch:hover {
-    background-color: #3eac2f;
-    color: #ffffff;
-  }
-
   .Price {
     font-size: 1rem;
     letter-spacing: 0.1rem;
@@ -114,11 +98,11 @@
   .heart {
     font-size: 1.2rem;
     cursor: pointer;
-    transition: transform 0.3s ease; /* Ger en mjuk övergångseffekt */
+    transition: transform 0.3s ease; 
   }
   
   .heart:hover {
-    transform: scale(1.5); /* Ökar storleken på ikonen med 20% */
+    transform: scale(1.5); 
   }
 
   .hearticon {
