@@ -32,9 +32,8 @@ const ProductDetail = () => {
 
   // Lägg till produkt i varukorgen
   const handleAddToCart = () => {
-    addToCart(product);
-    addToCart({ ...product, selectedSize })
-    setShowAddedMessage(true); 
+    addToCart({ ...product, selectedSize });
+    setShowAddedMessage(true);
     setTimeout(() => setShowAddedMessage(false), 4000);
   };
 

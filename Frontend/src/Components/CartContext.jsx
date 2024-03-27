@@ -29,24 +29,24 @@ export const CartProvider = ({ children }) => {
       }
     }, [isLoggedIn]);
 
-      const addToCart = (productToAdd) => {
+    const addToCart = (productToAdd) => {
       setCartItems((prevItems) => {
-      const existingItemIndex = prevItems.findIndex(item => item.id === productToAdd.id);
-
-        // Om produkten redan finns i varukorgen, öka antalet
+        const existingItemIndex = prevItems.findIndex(item => item.id === productToAdd.id && item.selectedSize === productToAdd.selectedSize);
+    
         if (existingItemIndex > -1) {
-        const newCartItems = [...prevItems];
-        newCartItems[existingItemIndex] = {
-        ...newCartItems[existingItemIndex],
-        quantity: newCartItems[existingItemIndex].quantity + 1
-        };
-
-        return newCartItems;
-      }
-      // Om produkten inte finns i varukorgen, lägg till den
-      return [...prevItems, { ...productToAdd, quantity: 1 }];
-    });
-  };
+          const newCartItems = [...prevItems];
+          newCartItems[existingItemIndex] = {
+            ...newCartItems[existingItemIndex],
+            quantity: newCartItems[existingItemIndex].quantity + 1
+          };
+    
+          return newCartItems;
+        }
+    
+        return [...prevItems, { ...productToAdd, quantity: 1 }];
+      });
+    };
+   
   
   // Ta bort en produkt från varukorgen
   const removeFromCart = (productId) => {

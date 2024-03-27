@@ -236,12 +236,12 @@
         "description": "Description of product 1",
         "sale": "20% off",
         "category": "sale",
-        "imageUrl": "/bilder/bild1.webp",
+        "imageUrl": "/bilder/bild3.webp",
         "price": "120",
         "newprice": "100",
         "sizes": "Onesize"
        },
-
+      
          {
           "id": 28,
           "name": "Product 2",
@@ -260,7 +260,7 @@
           "description": "Description of product 3",
           "sale": "40% off",
           "category": "sale",
-          "imageUrl": "/bilder/bild3.webp",
+          "imageUrl": "/bilder/bild4.webp",
           "price": "200",
           "newprice": "120",
           "sizes": "Onesize"
@@ -272,7 +272,7 @@
           "description": "Description of product 4",
           "sale": "50% off",
           "category": "sale",
-          "imageUrl": "/bilder/bild4.webp",
+          "imageUrl": "/bilder/bild1.webp",
           "price": "250",
           "newprice": "125",
           "sizes": "Onesize"

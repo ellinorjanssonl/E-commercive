@@ -67,8 +67,9 @@ const Cart = () => {
                 <ul>
                   <li><h3 className='carth3'>{item.name}</h3></li>
                   <img src={`http://localhost:5000${item.imageUrl}`} alt={item.name} />
-                  <li>Price: ${item.price}</li>
                   <li>Quantity: {item.quantity}</li>
+                  <li>Size: {item.selectedSize}</li>
+                  <li>Price: ${item.price}</li>
                   <button onClick={() => removeFromCart(item.id)}>Remove</button>
                 </ul>
               </div>

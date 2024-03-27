@@ -88,5 +88,20 @@
       }
     ],
     "totalPrice": 400
+  },
+  {
+    "cartItems": [
+      {
+        "id": 18,
+        "name": "product18",
+        "price": "200",
+        "category": "mens",
+        "imageUrl": "/bilder/mens2.jpg",
+        "description": "product18 description",
+        "sizes": "XS, S, M, L, XL, XXL",
+        "quantity": 2
+      }
+    ],
+    "totalPrice": 400
   }
 ]
