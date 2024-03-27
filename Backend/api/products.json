@@ -141,99 +141,99 @@
 
     {
         "id": 17,
-        "name": "product17",
+        "name": "Blue T-shirt",
         "price": "100",
         "category": "mens",
         "imageUrl": "/bilder/mens1.jpg",
-        "description": "product17 description",
+        "description": "Dark blue t-shirt with a round neck. The t-shirt is made of a soft cutton material and has a nice fit. it is stretchy. Availeble in all sizes",
         "sizes": "XS, S, M, L, XL, XXL"
     },
     {
         "id": 18,
-        "name": "product18",
+        "name": "Black T-shirt",
         "price": "200",
         "category": "mens",
         "imageUrl": "/bilder/mens2.jpg",
-        "description": "product18 description",
+        "description": "Black t-shirt with a round neck. The t-shirt is made of a soft cutton material and has a nice fit. it is stretchy. Availeble in all sizes",
         "sizes": "XS, S, M, L, XL, XXL"
     },
     {
         "id": 19,
-        "name": "product19",
+        "name": "Earings gold",
         "price": "300",
         "category": "mens",
         "imageUrl": "/bilder/mens3.webp",
-        "description": "product19 description",
-        "sizes": "XS, S, M, L, XL, XXL"
+        "description": "Gold earings with a round shape. The earings are made of real gold. They are handmade and has a nice fit. Availeble in one size",
+        "sizes": "Onesize"
     },
     {
         "id": 20,
-        "name": "product20",
+        "name": "light blue shirt",
         "price": "400",
         "category": "mens",
         "imageUrl": "/bilder/mens4.jpg",
-        "description": "product20 description",
+        "description": "Light blue shirt with buttons in the front. The shirt is made of a soft cutton material and has a nice fit. it is not stretchy. Availeble in all sizes",
         "sizes": "XS, S, M, L, XL, XXL"
     },
     {
         "id": 21,
-        "name": "product21",
+        "name": "White tanktop",
         "price": "500",
         "category": "mens",
         "imageUrl": "/bilder/mens5.jpg",
-        "description": "product21 description",
+        "description": "White tanktop with a round high neck. The tanktop is made of a soft cutton material and has a nice fit. it is stretchy. Availeble in all sizes",
         "sizes": "XS, S, M, L, XL, XXL"
     },
     {
         "id": 22,
-        "name": "product22",
+        "name": "White T-shirt",
         "price": "600",
         "category": "mens",
         "imageUrl": "/bilder/mens6.jpg",
-        "description": "product22 description",
+        "description": "White t-shirt with a round neck. The t-shirt is made of a soft cutton material and has a loose fit. it is stretchy and light. Availeble in all sizes",
         "sizes": "XS, S, M, L, XL, XXL"
     },
     {
         "id": 23,
-        "name": "product23",
+        "name": "Beige sweater",
         "price": "700",
         "category": "mens",
         "imageUrl": "/bilder/mens7.jpg",
-        "description": "product23 description",
+        "description": "Long-sleeve sweater in a light beige color. The sweater is made of a soft cutton material and has a loose fit. it is stretchy and warm. Availeble in all sizes",
         "sizes": "XS, S, M, L, XL, XXL"
     },
     {
         "id": 24,
-        "name": "product24",
+        "name": "Beige t-shirt",
         "price": "800",
         "category": "mens",
         "imageUrl": "/bilder/mens8.jpg",
-        "description": "product24 description",
+        "description": "Beige t-shirt with a round neck. The t-shirt is made of a soft cutton material and has a nice loose fit. it is stretchy. Availeble in all sizes",
         "sizes": "XS, S, M, L, XL, XXL"
     },
     {
         "id": 25,
-        "name": "product25",
+        "name": "Black/white shirt",
         "price": "900",
         "category": "mens",
         "imageUrl": "/bilder/mens9.jpg",
-        "description": "product25 description",
+        "description": "Black and white shirt with buttons. The shirt is made of a silk material and has a nice loose fit. it is one of our most elegant products. Availeble in all sizes",
         "sizes": "XS, S, M, L, XL, XXL"
     },
     {
         "id": 26,
-        "name": "product26",
+        "name": "Beige suit",
         "price": "1000",
         "category": "mens",
         "imageUrl": "/bilder/mens10.jpg",
-        "description": "product26 description",
+        "description": "Beige suit with a jacket and pants. The suit is made of a cutton material and has a nice tight fit. it is one of our most elegant products. Availeble in all sizes",
         "sizes": "XS, S, M, L, XL, XXL"
     },
 
     {
         "id": 27,
-        "name": "Product 1",
-        "description": "Description of product 1",
+        "name": "Green bag",
+        "description": "Green bag with a short strap. The bag is made of leather. it is medium sized. Availeble in one size only",
         "sale": "20% off",
         "category": "sale",
         "imageUrl": "/bilder/bild3.webp",
@@ -244,8 +244,8 @@
       
          {
           "id": 28,
-          "name": "Product 2",
-          "description": "Description of product 2",
+          "name": "Black Bag",
+          "description": "Black bag with a long strap. The bag is made of leather. it is medium sized. Availeble in one size only",
           "sale": "30% off",
           "category": "sale",
           "imageUrl": "/bilder/bild2.webp",
@@ -256,8 +256,8 @@
     
          {
           "id": 29,
-          "name": "Product 3",
-          "description": "Description of product 3",
+          "name": "White bag",
+          "description": "White bag with a short straps. The bag is made of leather. Handmade. It is medium sized. Availeble in one size only",
           "sale": "40% off",
           "category": "sale",
           "imageUrl": "/bilder/bild4.webp",
@@ -268,8 +268,8 @@
     
          {
           "id": 30,
-          "name": "Product 4",
-          "description": "Description of product 4",
+          "name": "Black small bag",
+          "description": "Black small bag with a long strap. The bag is made of leather. it is small sized. Availeble in one size only",
           "sale": "50% off",
           "category": "sale",
           "imageUrl": "/bilder/bild1.webp",
@@ -280,8 +280,8 @@
         
              {
             "id": 31,
-            "name": "Product 5",
-            "description": "Description of product 5",
+            "name": "Black sunglasses",
+            "description": "Black sunglasses with a round shape. The sunglasses are made of real glass. Availeble in one size only",
             "sale": "60% off",
             "category": "sale",
             "imageUrl": "/bilder/bild5.webp",
@@ -292,8 +292,8 @@
         
              {
             "id": 32,
-            "name": "Product 6",
-            "description": "Description of product 6",
+            "name": "Earings 4-pack",
+            "description": "Gold earings with a round shape. The earings are made of real gold. They are handmade and has a nice fit. Availeble in one size only",
             "sale": "70% off",
             "category": "sale",
             "imageUrl": "/bilder/bild6.webp",
@@ -304,8 +304,8 @@
         
              {
             "id": 33,
-            "name": "Product 7",
-            "description": "Description of product 7",
+            "name": "brown sunglasses",
+            "description": "Brown sunglasses with a round shape. The sunglasses are made of real glass. Availeble in one size only",
             "sale": "80% off",
             "category": "sale",
             "imageUrl": "/bilder/bild7.webp",
@@ -316,8 +316,8 @@
         
              {
             "id": 34,
-            "name": "Product 8",
-            "description": "Description of product 8",
+            "name": "Gold necklace",
+            "description": "Gold necklace with a round shape. The necklace is made of real gold. Availeble in one size only",
             "sale": "90% off",
             "category": "sale",
             "imageUrl": "/bilder/bild8.webp",
