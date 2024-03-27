@@ -15,6 +15,7 @@ import './Navbar.css';
 
 function NavbarComponent() {
   const { cartItems } = useCart();
+  const {favorites} = useCart();
   const { isLoggedIn, logout } = useAuth();
   const navigate = useNavigate(); // Skapa en instans av useNavigate
 
@@ -46,7 +47,7 @@ function NavbarComponent() {
         <Nav.Link className="navlogin" as={Link} to="/login">Login <FontAwesomeIcon icon={faUser} className="icon-space"/></Nav.Link>
       )}
         <Nav.Link className="navlogin" as={Link} to="/register">Register</Nav.Link>
-        <Nav.Link className="navlogin" as={Link} to="/favorites"><FaRegHeart /></Nav.Link>
+        <Nav.Link className="navlogin" as={Link} to="/favorites"><FaRegHeart color='red' className="icon-space" />({favorites.length})</Nav.Link>
         </Navbar.Collapse>
         
       </Container>

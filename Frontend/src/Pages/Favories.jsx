@@ -11,7 +11,7 @@ const Favorites = () => {
 
   return (
     <div className='favorites'>
-      <h2>Favorites</h2>
+      <h2 className='header'>Your favorites</h2>
       <div className='products'>
         {favorites.map(product => ( 
           <ul className='productsUL' key={product.id}>
