@@ -23,7 +23,7 @@
   .product-info {
     flex: 1;
     max-width: 90%; 
-    margin-bottom: 15rem;
+    margin-bottom: 5rem;
   }
 
   .product-info h2 {
@@ -89,6 +89,12 @@
   .size-option.selected {
     background-color: #000; 
     color: #fff; 
+  }
+
+  .size-guide {
+    max-width: 85%;
+    margin-top: 2rem; 
+    font-size: 0.9rem; 
   }
 
   @media screen and (max-width: 768px) {

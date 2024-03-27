@@ -59,16 +59,25 @@ const ProductDetail = () => {
                   className={`size-option ${selectedSize === size ? 'selected' : ''}`}
                   onClick={() => setSelectedSize(size)}
                 >
-                  {size}
-                </li>
-              ))}
-            </ul>
-          </li>
-          <li><button className='add-to-cart-btn' onClick={handleAddToCart}>Add to Cart</button></li>
-          {showAddedMessage && <div className='added-message'>Added to cart!</div>}
-        </ul>
-      </div>
-    </div>
+                 {size}
+                 </li>
+                 ))}
+                </ul>
+                   <li className='size-guide'>
+                    <strong>Size Guide:</strong><br />
+                    S - For chest 32-33 inches, waist 26-27 inches.<br />
+                    M - For chest 34-35 inches, waist 28-29 inches.<br />
+                    L - For chest 36-37 inches, waist 30-31 inches.<br />
+                    XL - For chest 38-39 inches, waist 32-33 inches.<br />
+                    </li>
+                    <br />
+                    <li className='price'> Price : {product.price}$</li>
+                  </li>
+                  <li><button className='add-to-cart-btn' onClick={handleAddToCart}>Add to Cart</button></li>
+                 {showAddedMessage && <div className='added-message'>Added to cart!</div>}
+               </ul>
+           </div>
+       </div>
   );
 };
 
