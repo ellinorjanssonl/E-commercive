@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Form, Button } from 'react-bootstrap';
 import './Css/Womens.css';
 import { FaHeart, FaRegHeart } from 'react-icons/fa';
 
@@ -12,25 +11,25 @@ const [searchTerm, setSearchTerm] = useState('');
 const [favorites, setFavorites] = useState(() => {
 const localFavorites = localStorage.getItem('favorites');
 return localFavorites ? JSON.parse(localFavorites) : [];
-}
-);
+  }
+   );
 
-      useEffect(() => {
+    useEffect(() => {
       const fetchProducts = async () => {
       try {
       const response = await fetch('http://localhost:5000/api/products');
       const data = await response.json();
-      setProducts(data);
+    setProducts(data);
       }
        catch (error) {
        console.error('Error fetching products:', error);
        }
       }
-        fetchProducts();
+    fetchProducts();
           }
         , []);
 
-         useEffect(() => {
+       useEffect(() => {
           // Uppdatera localStorage när favoriter ändras
           localStorage.setItem('favorites', JSON.stringify(favorites));
           }
@@ -67,16 +66,7 @@ return localFavorites ? JSON.parse(localFavorites) : [];
       return (
          <div className='womens'>
              <h2 className='header'>SALE</h2>
-             <Form className="Formsearch" onSubmit={(e) => e.preventDefault()}>
-             <Form.Control
-                    type="search"
-                    placeholder="Search for products.."
-                    className="searchbars"
-                    aria-label="Search"
-                    onChange={(e) => handleSearchChange(e.target.value)}
-                 />
-                <Button className="buttonsearch" variant="outline-success">Search</Button>
-             </Form>
+             <h3 className='header2'>Asseccories & Bags</h3>
              <div className='products'>
             {saleProducts.map(product => (
                       <ul className='productsUL' key={product.id}> 

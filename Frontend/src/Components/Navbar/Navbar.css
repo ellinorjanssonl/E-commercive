@@ -2,9 +2,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 1.5rem;
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.FASHONHUB {
+  font-size: 1.3rem;
+  font-family: 'poppins';
+  color: #000000;
+  text-decoration: none;
 }
 
 .navlink {
@@ -12,7 +19,7 @@
   display: inline-block;
   justify-content: space-between;
   font-size: 1rem;
-  margin: 0 1.5rem;
+  margin: 0 0.5rem;
   font-family: 'poppins';
   font-weight: 500;
   color: #000000;
