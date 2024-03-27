@@ -1,1 +1,100 @@
-[]
+[
+  {
+    "cartItems": [
+      {
+        "id": 28,
+        "name": "Black Bag",
+        "description": "Black bag with a long strap. The bag is made of leather. it is medium sized. Availeble in one size only",
+        "sale": "30% off",
+        "category": "sale",
+        "imageUrl": "/bilder/bild2.webp",
+        "price": "150",
+        "newprice": "105",
+        "sizes": "Onesize",
+        "selectedSize": "Onesize",
+        "quantity": 1
+      },
+      {
+        "id": 33,
+        "name": "brown sunglasses",
+        "description": "Brown sunglasses with a round shape. The sunglasses are made of real glass. Availeble in one size only",
+        "sale": "80% off",
+        "category": "sale",
+        "imageUrl": "/bilder/bild7.webp",
+        "price": "400",
+        "newprice": "80",
+        "sizes": "Onesize",
+        "selectedSize": "Onesize",
+        "quantity": 1
+      },
+      {
+        "id": 23,
+        "name": "Beige sweater",
+        "price": "700",
+        "category": "mens",
+        "imageUrl": "/bilder/mens7.jpg",
+        "description": "Long-sleeve sweater in a light beige color. The sweater is made of a soft cutton material and has a loose fit. it is stretchy and warm. Availeble in all sizes",
+        "sizes": "XS, S, M, L, XL, XXL",
+        "selectedSize": "L",
+        "quantity": 1
+      },
+      {
+        "id": 8,
+        "name": "Shirt loose fit",
+        "price": "800",
+        "category": "womens",
+        "imageUrl": "/bilder/jeans1.webp",
+        "description": "A classic shirt in loose fit. Its in a color of beige and black and has a very light and soft materal. Buttons in the front. Oversize",
+        "sizes": "XS, S, M, L, XL, XXL",
+        "selectedSize": "M",
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 2050
+  },
+  {
+    "cartItems": [
+      {
+        "id": 17,
+        "name": "Blue T-shirt",
+        "price": "100",
+        "category": "mens",
+        "imageUrl": "/bilder/mens1.jpg",
+        "description": "Dark blue t-shirt with a round neck. The t-shirt is made of a soft cutton material and has a nice fit. it is stretchy. Availeble in all sizes",
+        "sizes": "XS, S, M, L, XL, XXL",
+        "selectedSize": "XS",
+        "quantity": 1
+      },
+      {
+        "id": 23,
+        "name": "Beige sweater",
+        "price": "700",
+        "category": "mens",
+        "imageUrl": "/bilder/mens7.jpg",
+        "description": "Long-sleeve sweater in a light beige color. The sweater is made of a soft cutton material and has a loose fit. it is stretchy and warm. Availeble in all sizes",
+        "sizes": "XS, S, M, L, XL, XXL",
+        "selectedSize": "XS",
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 800
+  },
+  {
+    "cartItems": [
+      {
+        "id": 28,
+        "name": "Black Bag",
+        "description": "Black bag with a long strap. The bag is made of leather. it is medium sized. Availeble in one size only",
+        "sale": "30% off",
+        "category": "sale",
+        "imageUrl": "/bilder/bild2.webp",
+        "price": "150",
+        "newprice": "105",
+        "sizes": "Onesize",
+        "selectedSize": "Onesize",
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 150
+  }
+]

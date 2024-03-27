@@ -104,33 +104,51 @@
     color: white; 
   }
   
-  .checkout button{
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .checkout{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  .CheckoutForm {
+    width: 40vw;
+    margin: 2rem auto;
     padding: 1rem;
-    border: none;
+    padding-bottom: 2rem;
+    border-radius: 5px;
+    background-color: #353535;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-    width: 15rem;
-    color: rgb(0, 0, 0);
-    background-color: rgb(84, 92, 255);
-    transition: all 0.3s;
-    
   }
-
-  .checkout:hover {
-    background-color: rgb(13, 214, 50); 
+  
+  .CheckoutForm h2 {
+    text-align: center;
     color: white;
-    transform: scale(1.1);
+  }
+  
+  .formGroup {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .formGroup label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .formGroup input {
+    width: 60%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .submitBtn {
+    width: 60%;
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submitBtn:hover {
+    background-color: #45db4c;
   }
   
   .Loading {

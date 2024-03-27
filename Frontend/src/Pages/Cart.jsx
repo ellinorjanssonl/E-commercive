@@ -79,7 +79,31 @@ const Cart = () => {
             <ul>
               <button className="carttotal" onClick={clearCart}>Clear Cart</button>
               <li><h3>Total: $ {totalPrice}</h3></li>
-              <button className="checkout" onClick={handleCheckout}>Checkout</button>
+              <div className="CheckoutForm">
+  <h2>Checkout</h2>
+  <form>
+    <div className="formGroup">
+      <label htmlFor="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="John Doe" />
+    </div>
+
+    <div className="formGroup">
+      <label htmlFor="address">Address:</label>
+      <input type="text" id="address" name="address" placeholder="123 Main St" />
+    </div>
+
+    <div className="formGroup">
+      <label htmlFor="country">Country:</label>
+      <input type="text" id="country" name="country" placeholder="Country" />
+    </div>
+
+    <div className="formGroup">
+      <label htmlFor="bank">Bank Account Number:</label>
+      <input type="text" id="bank" name="bank" placeholder="0000 1111 2222 3333" />
+    </div>
+  </form>
+</div>
+              <button className="submitBtn" onClick={handleCheckout}>Checkout</button>
             </ul>
           </div>
         </>
