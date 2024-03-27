@@ -60,7 +60,7 @@
     padding: 0.8rem;
     color: white;
   }
-
+  
   .Formsearch {
     display: flex;
     justify-content: center; /* Centrerar formelementen horisontellt */
@@ -81,6 +81,13 @@
 
   .searchbars::placeholder {
     color: #8a8a8a;
+  }
+
+  .searchIcon {
+    color: #8a8a8a;
+    font-size: 1.2rem;
+    position: relative;
+    left: -3rem;
   }
   
   .buttonsearch {

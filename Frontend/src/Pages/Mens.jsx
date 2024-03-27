@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Form, Button } from 'react-bootstrap';
 import './Css/Womens.css';
 import { FaHeart, FaRegHeart } from 'react-icons/fa';
+import { FaSearch } from 'react-icons/fa';
 
 const Mens = () => {
   const [products, setProducts] = useState([]);
@@ -67,7 +68,7 @@ const Mens = () => {
           aria-label="Search"
           onChange={(e) => handleSearchChange(e.target.value)}
         />
-        <Button className="buttonsearch" variant="outline-success">Search</Button>
+          <FaSearch className="searchIcon"/> 
       </Form>
       <div className='products'>
         {MensProducts.map(product => (

@@ -78,9 +78,9 @@ return localFavorites ? JSON.parse(localFavorites) : [];
                             <img src={`http://localhost:5000${product.imageUrl}`} alt={product.name} />
                           </Link>
                         </li> 
-                        <li className='Price'> Price: ${product.price}
+                        <li className='Price'>Price: ${product.price}
                         </li>
-                        <li className='Price'> Sale: ${product.sale}
+                        <li className='Price'>Sale: ${product.sale}
                         </li>
                         <li className='heart' onClick={() => toggleFavorite(product.id)}>
                         {isProductFavorite(product.id) ? <FaHeart className='hearticon'/> : <FaRegHeart />}
