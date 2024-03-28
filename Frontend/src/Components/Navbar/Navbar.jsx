@@ -32,7 +32,7 @@ function NavbarComponent() {
   return (
     <Navbar expand="lg" className="Navbarsection">
       <Container fluid>
-        <Navbar.Brand className='FASHONHUB' href="/">FASHONHUB</Navbar.Brand>
+        <Navbar.Brand className='FASHONHUB' href="/">FASHIONHUB</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav

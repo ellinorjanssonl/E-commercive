@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaHeart, FaRegHeart} from 'react-icons/fa';
 import { useCart } from '../Components/CartContext';
+import config from '../config';
 import './Css/Womens.css';
 
 /* Här är min komponent för Sale.jsx. Här visar jag produkterna som är på rea.
@@ -16,7 +17,7 @@ const Sale = () => {
     useEffect(() => {
       const fetchProducts = async () => {
         try {
-        const response = await fetch('http://localhost:5000/api/products');
+        const response = await fetch(config.URL + config.productsURI);
         const data = await response.json();
         setProducts(data);
         } catch (error) {
@@ -47,7 +48,7 @@ const Sale = () => {
                     </li>
                      <li>
                      <Link to={`/product/${product.id}`}>
-                     <img src={`http://localhost:5000${product.imageUrl}`} alt={product.name} />
+                     <img src={config.URL + `${product.imageUrl.replace(/^\/+/g, '')}`} alt={product.name} />
                      </Link>
                      </li> 
                      <li className='Price'>Price: ${product.price}

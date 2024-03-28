@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useCart } from './CartContext';
+import { FaHeart, FaRegHeart } from 'react-icons/fa';
 import '../Pages/Css/ProductDetails.css';
+import config from '../config';
 
 /* här är min kod för ProductDetails.jsx. Här visar jag detaljerad information om produkten. Jag använder useState, useEffect och useParams.
   Jag använder också useCart för att lägga till produkter i varukorgen. */
@@ -12,13 +14,14 @@ const ProductDetail = () => {
   const [selectedSize, setSelectedSize] = useState(''); 
   const [showAddedMessage, setShowAddedMessage] = useState(false); 
   const { addToCart } = useCart();
+  const { favorites, toggleFavorite } = useCart(); 
   
   
  // Hämta produkt från API
  useEffect(() => {
   const fetchProduct = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/api/products/${productId}`);
+      const response = await fetch(config.URL + config.productsURI + `${productId}`);
       const data = await response.json();
       setProduct(data);
       setSelectedSize(data.sizes.split(', ')[0]);
@@ -29,6 +32,11 @@ const ProductDetail = () => {
 
     fetchProduct();
   }, [productId]);
+
+  const isProductFavorite = (productId) => {
+    return favorites.some(fav => fav.id === productId);
+  };
+
 
   // Lägg till produkt i varukorgen
   const handleAddToCart = () => {
@@ -44,7 +52,7 @@ const ProductDetail = () => {
   return (
     <div className='product-detail'>
       <div className='image-container'>
-       <img src={`http://localhost:5000${product.imageUrl}`} alt={product.name} />
+       <img src={config.URL + `${product.imageUrl.replace(/^\/+/g, '')}`} alt={product.name} />
       </div>
         <div className='product-info'>
          <ul>
@@ -71,6 +79,9 @@ const ProductDetail = () => {
                     </li>
                     <br />
                     <li className='price'> Price : {product.price}$</li>
+                  </li>
+                  <li className='heartpic' onClick={() => toggleFavorite(product)}>
+                  {isProductFavorite(product.id) ? <FaHeart className='hearticon' style={{ fontSize: '20px' }}/> : <FaRegHeart style={{ fontSize: '20px' }} />}
                   </li>
                     <li><button className='add-to-cart-btn' onClick={handleAddToCart}>Add to Cart</button></li>
                  {showAddedMessage && <div className='added-message'>Added to cart!</div>}

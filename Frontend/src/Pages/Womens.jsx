@@ -4,6 +4,7 @@ import { Form} from 'react-bootstrap';
 import { FaHeart, FaRegHeart, FaSearch } from 'react-icons/fa';
 import { useCart } from '../Components/CartContext';
 import './Css/Womens.css';
+import config from '../config';
 
 /* Här är min komponent för womens.jsx. Här visar jag produkterna för män.
 Jag använder useState för att hålla koll på söktermen.
@@ -18,7 +19,7 @@ const Womens = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/products');
+        const response = await fetch(config.URL + config.productsURI);
         const data = await response.json();
         setProducts(data);
       } catch (error) {
@@ -63,7 +64,7 @@ const Womens = () => {
             </li>
             <li>
               <Link to={`/product/${product.id}`}>
-                <img src={`http://localhost:5000${product.imageUrl}`} alt={product.name} />
+                <img src={config.URL + `${product.imageUrl.replace(/^\/+/g, '')}`} alt={product.name} />
               </Link>
             </li> 
             <li className='Price'>Price: ${product.price}</li>

@@ -2,6 +2,7 @@ import React, { useState} from 'react';
 import { useCart } from '../Components/CartContext';
 import { useNavigate } from 'react-router-dom'; // Importera useNavigate
 import './Css/Cart.css';
+import config from '../config';
 
 /* Här är min komponent för Cart.jsx. Här visar jag varukorgen för min webbshop.
 Jag använder useState för att visa meddelandet efter att användaren har genomfört ett köp.
@@ -18,7 +19,7 @@ const Cart = () => {
   // Funktion för att genomföra köp och lägga till i "databasen"
   const handleCheckout = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/checkout', {
+      const response = await fetch(config.URL + config.checkoutURI, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -66,7 +67,7 @@ const Cart = () => {
               <div key={item.id} className='CartItem'>
                 <ul>
                   <li><h3 className='carth3'>{item.name}</h3></li>
-                  <img src={`http://localhost:5000${item.imageUrl}`} alt={item.name} />
+                  <img src={config.URL + `${item.imageUrl.replace(/^\/+/g, '')}`} alt={item.name} />
                   <li>Quantity: {item.quantity}</li>
                   <li>Size: {item.selectedSize}</li>
                   <li>Price: ${item.price}</li>

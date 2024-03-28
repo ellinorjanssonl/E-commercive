@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Css/RegisterLogin.css';
+import config from '../config';
 
 /* här är min register sida där användaren kan registrera sig 
   Jag använder useState för att hålla koll på användarnamn och lösenord.
@@ -16,7 +17,7 @@ function Register() {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:5000/api/register', {
+      const response = await fetch(config.URL + config.registerURI, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

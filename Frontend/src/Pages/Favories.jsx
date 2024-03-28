@@ -1,12 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useCart } from '../Components/CartContext';
+import config from '../config';
 
 /* Favorites-komponenten visar användarens favoriter.
 Jag använder useCart för att hämta favorites direkt från context.
 Om det inte finns några favoriter visas ett meddelande. */
-
-
 
 const Favorites = () => {
   const { favorites } = useCart(); // Använd useCart för att hämta favorites direkt
@@ -26,7 +25,7 @@ const Favorites = () => {
             </li>
             <li>
               <Link to={`/product/${product.id}`}>
-                <img src={`http://localhost:5000${product.imageUrl}`} alt={product.name} />
+                <img src={config.URL + `${product.imageUrl.replace(/^\/+/g, '')}`} alt={product.name} />
               </Link>
             </li>
             <li className='Price'>Price: ${product.price}</li>

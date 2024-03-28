@@ -2,6 +2,7 @@ import  { useState } from 'react';
 import { useAuth } from '../Components/AuthContext';
 import './Css/RegisterLogin.css';
 import { useNavigate } from 'react-router-dom';
+import config from '../config';
 
 /* Här är min inloggningssida där användaren kan logga in.
 Jag använder useState för att hålla koll på användarnamn och lösenord.
@@ -16,7 +17,7 @@ function Login() {
   const handleSubmit = async (e) => {
     if (username.length > 0 && password.length > 0) {
     e.preventDefault();
-      const response = await fetch('http://localhost:5000/api/login', {
+      const response = await fetch(config.URL + config.loginURI, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
