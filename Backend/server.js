@@ -9,7 +9,6 @@ app.use(cors()); // Använd cors som middleware i Express
 app.use('/bilder', express.static('bilder'));
 app.use(express.json());
 
-
 app.get('/', (req, res) => {
     res.send('Servern körs');
 });
@@ -95,7 +94,10 @@ app.post('/api/checkout', (req, res) => {
 });
 
 
-app.listen(PORT, () => {
-    console.log(`Servern körs på port ${PORT}`);
-});
+if (process.env.NODE_ENV === 'dev') {
+    app.listen(PORT, () => {
+        console.log(`Servern körs på port ${PORT}`);
+    });
+}
 
+module.exports = app;
