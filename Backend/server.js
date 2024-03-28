@@ -8,6 +8,8 @@ const PORT = 5000;
 app.use(cors()); // Använd cors som middleware i Express
 app.use('/bilder', express.static('bilder'));
 app.use(express.json());
+require('dotenv').config();
+
 
 app.get('/', (req, res) => {
     res.send('Servern körs');

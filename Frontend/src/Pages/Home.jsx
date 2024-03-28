@@ -4,6 +4,7 @@ import './Css/Home.css'
 import Card from 'react-bootstrap/Card'
 import Bild17 from '../Components/Assets/Bild17.webp'
 import Bild8 from '../Components/Assets/8.webp'
+import { Link } from 'react-router-dom'
 
 /* Här är min komponent för Home.jsx. Här visar jag min startsida för min webbshop.
 Jag använder en Hero section för att visa en stor rubrik och en undertext.
@@ -13,9 +14,11 @@ const Home = () => {
     <div className='home'>
        <div className="banner">
        <div className="banner-text">
+    
         Sale now on! Check out our new arrivals and vast selection of clothing for men and women. &nbsp; Sale now on! Check out our new arrivals and vast selection of clothing for men and women.
+       
         </div>
-       </div>
+        </div>
         <section className="hero">
           <h1 className='Intro-h1'>FASHONHUB</h1>
           <p className='Intro-p'>Shop the latest fashion trends</p>
