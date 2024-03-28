@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const cors = require('cors'); // Importera cors
 const app = express();
-const PORT = 5000;
+const PORT = 3000;
 
 app.use(cors()); // Använd cors som middleware i Express
 app.use('/bilder', express.static('bilder'));
