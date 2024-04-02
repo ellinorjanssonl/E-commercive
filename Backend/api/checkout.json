@@ -90,5 +90,34 @@
       }
     ],
     "totalPrice": 100
+  },
+  {
+    "cartItems": [
+      {
+        "id": 1,
+        "name": "Black Corset",
+        "price": "100",
+        "category": "womens",
+        "imageUrl": "/bilder/top1.webp",
+        "description": "Cropped corset in woven fabric with a sheen. Boning at front and back, hook-and-eye fastening at front, and a concealed zip at back. Lined.",
+        "sizes": "XS, S, M, L, XL, XXL",
+        "selectedSize": "L",
+        "quantity": 1
+      },
+      {
+        "id": 28,
+        "name": "Black Bag",
+        "description": "Black bag with a long strap. The bag is made of leather. it is medium sized. Availeble in one size only",
+        "sale": "30% off",
+        "category": "sale",
+        "imageUrl": "/bilder/bild2.webp",
+        "price": "150",
+        "newprice": "105",
+        "sizes": "Onesize",
+        "selectedSize": "Onesize",
+        "quantity": 1
+      }
+    ],
+    "totalPrice": 250
   }
 ]
