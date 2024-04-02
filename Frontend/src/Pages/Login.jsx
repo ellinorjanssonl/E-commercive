@@ -11,6 +11,7 @@ Jag använder också useNavigate för att navigera användaren till hemsidan eft
 function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
   const navigate = useNavigate();
   const { login } = useAuth(); // Hämta login-funktionen från context
 
@@ -26,17 +27,17 @@ function Login() {
       });
       
       if (!response.ok) {
-        throw new Error('Inloggningen misslyckades');
+        // Uppdatera felmeddelandet om inloggningen misslyckas
+        setErrorMessage('Wrong email or password');
+        return; // Avbryt funktionen om inloggningen misslyckas
       }
 
-      if (response.ok) {
-        console.log('Inloggningen lyckades');
-        login(); // Uppdatera inloggningstillståndet
-        // Efter framgångsrik inloggning, navigera till hemsidan
-        navigate('/');
-      }
+      console.log('Inloggningen lyckades');
+      login(); // Uppdatera inloggningstillståndet
+      navigate('/'); // Efter framgångsrik inloggning, navigera till hemsidan
     }
   };
+  
 
   return (
     <div className="login-container">
@@ -63,6 +64,7 @@ function Login() {
           />
         </div>
         <button type="submit" className="login-btn">Login</button>
+        {errorMessage && <div className="error-message">{errorMessage}</div>}
       </form>
     </div>
   );

@@ -136,6 +136,16 @@
     background: #18b32f;
   }
 
+  .error-message {
+    color: rgb(255, 49, 49);
+    text-shadow: rgba(0, 0, 0, 0.6) 0px 1px 3px;
+    font-size: 1rem;
+    margin-top: 0.8rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
   @media screen and (max-width: 768px) {
     .register-form {
       width: 100%;
