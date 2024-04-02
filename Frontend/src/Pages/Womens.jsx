@@ -6,7 +6,7 @@ import { useCart } from '../Components/CartContext';
 import './Css/Womens.css';
 import config from '../config';
 
-/* Här är min komponent för womens.jsx. Här visar jag produkterna för män.
+/* Här är min komponent för womens.jsx. Här visar jag produkterna för kvinnor.
 Jag använder useState för att hålla koll på söktermen.
 jag hämtar produkterna från min backend och visar dem i en lista.
 Jag använder också useCart för att visa produkterna och för att lägga till produkter i favoriter. */
